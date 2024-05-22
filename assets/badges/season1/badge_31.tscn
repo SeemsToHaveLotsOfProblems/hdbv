@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5ym6bcmburp0"]
+
+[ext_resource type="Texture2D" uid="uid://q3y7nxxvcflk" path="res://assets/badges/season1/images/The Puppet Show Badge.webp" id="1_bl5qj"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_se4yy"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_bl5qj")
+script = ExtResource("2_se4yy")
+badge_name = "The Puppet Show Badge"

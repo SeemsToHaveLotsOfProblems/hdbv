@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://neu460771ack"]
+
+[ext_resource type="Texture2D" uid="uid://ciow45f7vxhdv" path="res://assets/badges/season1/images/The Castle Badge.webp" id="1_actoj"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_jiiik"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_actoj")
+script = ExtResource("2_jiiik")
+badge_name = "The Castle Badge"

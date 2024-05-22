@@ -1,0 +1,107 @@
+[gd_scene load_steps=6 format=3 uid="uid://dlsqlr1183meg"]
+
+[ext_resource type="Texture2D" uid="uid://cc75i0uav33kv" path="res://assets/background.png" id="1_fmxg1"]
+[ext_resource type="Script" path="res://scenes/season_selection.gd" id="2_0821a"]
+[ext_resource type="Texture2D" uid="uid://btb6udyppr1fy" path="res://assets/arrow.png" id="3_l8y2d"]
+[ext_resource type="Script" path="res://scenes/SettingsButton.gd" id="4_o0mbs"]
+[ext_resource type="Script" path="res://scenes/CreditsButton.gd" id="5_w48fs"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_fmxg1")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+script = ExtResource("2_0821a")
+
+[node name="Left_Season_Arrow" type="TextureRect" parent="CenterContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(68, 34)
+layout_mode = 2
+texture = ExtResource("3_l8y2d")
+expand_mode = 1
+
+[node name="SeasonName" type="RichTextLabel" parent="CenterContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 22
+bbcode_enabled = true
+text = "[color=green]SEASON 1"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+
+[node name="Right_Season_Arrow" type="TextureRect" parent="CenterContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(68, 34)
+layout_mode = 2
+texture = ExtResource("3_l8y2d")
+expand_mode = 1
+flip_h = true
+
+[node name="ViewBadgesButton" type="Button" parent="CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "View Badges"
+
+[node name="SettingsButton" type="Button" parent="CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Settings
+"
+script = ExtResource("4_o0mbs")
+
+[node name="CreditsButton" type="Button" parent="CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "Credits
+
+"
+script = ExtResource("5_w48fs")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.066
+anchor_top = 0.071
+anchor_right = 0.937
+anchor_bottom = 0.227
+offset_left = -0.0319977
+offset_top = -0.00800323
+offset_right = -0.424072
+offset_bottom = -0.0960083
+grow_horizontal = 2
+theme_override_font_sizes/normal_font_size = 72
+bbcode_enabled = true
+text = "[center][rainbow]Hey Duggee Badge Viewer!"
+scroll_active = false
+autowrap_mode = 0
+
+[connection signal="gui_input" from="CenterContainer/VBoxContainer/HBoxContainer/Left_Season_Arrow" to="CenterContainer/VBoxContainer/HBoxContainer" method="_on_left_season_arrow_gui_input"]
+[connection signal="gui_input" from="CenterContainer/VBoxContainer/HBoxContainer/Right_Season_Arrow" to="CenterContainer/VBoxContainer/HBoxContainer" method="_on_right_season_arrow_gui_input"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ViewBadgesButton" to="CenterContainer/VBoxContainer/HBoxContainer" method="_on_view_badges_button_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/SettingsButton" to="CenterContainer/VBoxContainer/SettingsButton" method="_on_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/CreditsButton" to="CenterContainer/VBoxContainer/CreditsButton" method="_on_pressed"]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpv8dht4y3c82"]
+
+[ext_resource type="Texture2D" uid="uid://dhwsfnryi52dp" path="res://assets/badges/season1/images/The Spider Badge.webp" id="1_fs2gv"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_q1ked"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_fs2gv")
+script = ExtResource("2_q1ked")
+badge_name = "The Spider Badge"

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcewkmerpxuvg"]
+
+[ext_resource type="Texture2D" uid="uid://dpqopbjhfmoxp" path="res://assets/badges/season1/images/The Hide and Seek Badge.webp" id="1_no5lk"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_40wv7"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_no5lk")
+script = ExtResource("2_40wv7")
+badge_name = "The Hide and Seek Badge"

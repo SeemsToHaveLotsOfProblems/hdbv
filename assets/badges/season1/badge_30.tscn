@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0frhi1xrrcy6"]
+
+[ext_resource type="Texture2D" uid="uid://cime6ow4rxcec" path="res://assets/badges/season1/images/The Paper Boat Badge.webp" id="1_d7wsr"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_cwpok"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_d7wsr")
+script = ExtResource("2_cwpok")
+badge_name = "The Paper Boat Badge"

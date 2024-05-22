@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhk04cfafdiyn"]
+
+[ext_resource type="Texture2D" uid="uid://b7n3ov7opt26x" path="res://assets/badges/season1/images/The Jam Badge.webp" id="1_bs0pn"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_w83ts"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_bs0pn")
+script = ExtResource("2_w83ts")
+badge_name = "The Jam Badge"

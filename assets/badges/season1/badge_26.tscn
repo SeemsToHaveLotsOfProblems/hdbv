@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccud6qia2xy6"]
+
+[ext_resource type="Texture2D" uid="uid://ms4ivngjqfge" path="res://assets/badges/season1/images/The Leaf Badge.webp" id="1_c1np4"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_ulia1"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_c1np4")
+script = ExtResource("2_ulia1")
+badge_name = "The Leaf Badge"

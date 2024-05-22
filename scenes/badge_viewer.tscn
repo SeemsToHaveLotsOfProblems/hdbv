@@ -1,0 +1,459 @@
+[gd_scene load_steps=58 format=3 uid="uid://cm7ii5ay3nist"]
+
+[ext_resource type="Script" path="res://scenes/swipe_script.gd" id="1_pi0oq"]
+[ext_resource type="Texture2D" uid="uid://cc75i0uav33kv" path="res://assets/background.png" id="2_svmdm"]
+[ext_resource type="Script" path="res://scenes/badge_handler.gd" id="3_tcfer"]
+[ext_resource type="PackedScene" uid="uid://byhu0lfvao5j3" path="res://assets/badges/season1/badge_1.tscn" id="4_ewywe"]
+[ext_resource type="Script" path="res://scenes/to_main_menu_button.gd" id="4_im1qq"]
+[ext_resource type="PackedScene" uid="uid://ciftxrx364vik" path="res://assets/badges/season1/badge_2.tscn" id="5_2xkmc"]
+[ext_resource type="Script" path="res://scenes/open_settings_button.gd" id="5_u0qf3"]
+[ext_resource type="PackedScene" uid="uid://wmpfyljewde3" path="res://assets/badges/season1/badge_3.tscn" id="6_djak0"]
+[ext_resource type="PackedScene" uid="uid://cuhm2frkf7mof" path="res://assets/badges/season1/badge_4.tscn" id="7_ub6k4"]
+[ext_resource type="PackedScene" uid="uid://b1lobg8x8ejby" path="res://assets/badges/season1/badge_5.tscn" id="8_pspnx"]
+[ext_resource type="PackedScene" uid="uid://c0ja1ertf36rc" path="res://assets/badges/season1/badge_6.tscn" id="9_jxnnj"]
+[ext_resource type="PackedScene" uid="uid://cl2c0obgq3f1l" path="res://assets/badges/season1/badge_7.tscn" id="10_k1fs7"]
+[ext_resource type="PackedScene" uid="uid://boxh8exe1fn6q" path="res://assets/badges/season1/badge_8.tscn" id="11_eftx1"]
+[ext_resource type="PackedScene" uid="uid://k5dtk8d52gsd" path="res://assets/badges/season1/badge_9.tscn" id="12_yignw"]
+[ext_resource type="PackedScene" uid="uid://neu460771ack" path="res://assets/badges/season1/badge_10.tscn" id="13_6p2w7"]
+[ext_resource type="PackedScene" uid="uid://l5lw3qq6wxl3" path="res://assets/badges/season1/badge_11.tscn" id="14_rt551"]
+[ext_resource type="PackedScene" uid="uid://dgeiw6cun7jgu" path="res://assets/badges/season1/badge_12.tscn" id="15_bi5vi"]
+[ext_resource type="PackedScene" uid="uid://hr3ss76xyjca" path="res://assets/badges/season1/badge_13.tscn" id="16_s4jfd"]
+[ext_resource type="PackedScene" uid="uid://bwh88sml2okn" path="res://assets/badges/season1/badge_14.tscn" id="17_xelpg"]
+[ext_resource type="PackedScene" uid="uid://bmrwchmg1l4np" path="res://assets/badges/season1/badge_15.tscn" id="18_wlg0s"]
+[ext_resource type="PackedScene" uid="uid://36c22buppcnh" path="res://assets/badges/season1/badge_16.tscn" id="19_rehd1"]
+[ext_resource type="PackedScene" uid="uid://cm7hq8b5g6gdr" path="res://assets/badges/season1/badge_17.tscn" id="20_fgakv"]
+[ext_resource type="PackedScene" uid="uid://cai468pvhlqu1" path="res://assets/badges/season1/badge_18.tscn" id="21_3mkjw"]
+[ext_resource type="PackedScene" uid="uid://77o3f0gyx4fr" path="res://assets/badges/season1/badge_19.tscn" id="22_fh220"]
+[ext_resource type="PackedScene" uid="uid://dfsl8qacgqlpp" path="res://assets/badges/season1/badge_20.tscn" id="23_lxc63"]
+[ext_resource type="PackedScene" uid="uid://ofj2s1qcfgbv" path="res://assets/badges/season1/badge_21.tscn" id="24_4876m"]
+[ext_resource type="PackedScene" uid="uid://weuj841gj0ai" path="res://assets/badges/season1/badge_22.tscn" id="25_ho1k1"]
+[ext_resource type="PackedScene" uid="uid://5h3a47wigqnf" path="res://assets/badges/season1/badge_23.tscn" id="26_21chm"]
+[ext_resource type="PackedScene" uid="uid://dcewkmerpxuvg" path="res://assets/badges/season1/badge_24.tscn" id="27_b2bp7"]
+[ext_resource type="PackedScene" uid="uid://dhk04cfafdiyn" path="res://assets/badges/season1/badge_25.tscn" id="28_v5uao"]
+[ext_resource type="PackedScene" uid="uid://ccud6qia2xy6" path="res://assets/badges/season1/badge_26.tscn" id="29_svhj7"]
+[ext_resource type="PackedScene" uid="uid://ffh6tud1xtdo" path="res://assets/badges/season1/badge_27.tscn" id="30_826ed"]
+[ext_resource type="PackedScene" uid="uid://chnn5y4i0gokt" path="res://assets/badges/season1/badge_28.tscn" id="31_ob51w"]
+[ext_resource type="PackedScene" uid="uid://b8scw5ecj77sw" path="res://assets/badges/season1/badge_29.tscn" id="32_lgyt1"]
+[ext_resource type="PackedScene" uid="uid://b0frhi1xrrcy6" path="res://assets/badges/season1/badge_30.tscn" id="33_pkq6k"]
+[ext_resource type="PackedScene" uid="uid://c5ym6bcmburp0" path="res://assets/badges/season1/badge_31.tscn" id="34_rfoj0"]
+[ext_resource type="PackedScene" uid="uid://dsiqbbhs1gsam" path="res://assets/badges/season1/badge_32.tscn" id="35_1jdux"]
+[ext_resource type="PackedScene" uid="uid://drkfefvwswrvw" path="res://assets/badges/season1/badge_33.tscn" id="36_nh7gf"]
+[ext_resource type="PackedScene" uid="uid://bgm36tciukkeh" path="res://assets/badges/season1/badge_34.tscn" id="37_4lir5"]
+[ext_resource type="PackedScene" uid="uid://d2puax4y1j1re" path="res://assets/badges/season1/badge_35.tscn" id="38_etdbs"]
+[ext_resource type="PackedScene" uid="uid://6wc6u6aw2x2q" path="res://assets/badges/season1/badge_36.tscn" id="39_3jipq"]
+[ext_resource type="PackedScene" uid="uid://5nq0mvgfgovr" path="res://assets/badges/season1/badge_37.tscn" id="40_2a3w7"]
+[ext_resource type="PackedScene" uid="uid://dyq1soh2mrwe7" path="res://assets/badges/season1/badge_38.tscn" id="41_m8mhw"]
+[ext_resource type="PackedScene" uid="uid://bl8j0xbtamdat" path="res://assets/badges/season1/badge_39.tscn" id="42_esntr"]
+[ext_resource type="PackedScene" uid="uid://dmxlt0quyqm0k" path="res://assets/badges/season1/badge_40.tscn" id="43_ej2o5"]
+[ext_resource type="PackedScene" uid="uid://63uero232bu8" path="res://assets/badges/season1/badge_41.tscn" id="44_ehb1w"]
+[ext_resource type="PackedScene" uid="uid://cpv8dht4y3c82" path="res://assets/badges/season1/badge_42.tscn" id="45_qkiwn"]
+[ext_resource type="PackedScene" uid="uid://ddcp0bnuqk0xu" path="res://assets/badges/season1/badge_43.tscn" id="46_bjymq"]
+[ext_resource type="PackedScene" uid="uid://dw6nmlxwc65hl" path="res://assets/badges/season1/badge_44.tscn" id="47_84f67"]
+[ext_resource type="PackedScene" uid="uid://1fsga873idpg" path="res://assets/badges/season1/badge_45.tscn" id="48_shn7f"]
+[ext_resource type="PackedScene" uid="uid://bcxem774u0hyp" path="res://assets/badges/season1/badge_46.tscn" id="49_u3tid"]
+[ext_resource type="PackedScene" uid="uid://dabjiw8aq5xv" path="res://assets/badges/season1/badge_47.tscn" id="50_iom1w"]
+[ext_resource type="PackedScene" uid="uid://kc5xi0aygv8n" path="res://assets/badges/season1/badge_48.tscn" id="51_eking"]
+[ext_resource type="PackedScene" uid="uid://43fvlv1psj1f" path="res://assets/badges/season1/badge_49.tscn" id="52_57rta"]
+[ext_resource type="PackedScene" uid="uid://ctlphcgt17rcn" path="res://assets/badges/season1/badge_50.tscn" id="53_juol1"]
+[ext_resource type="PackedScene" uid="uid://dx3c0m5s0bbs5" path="res://assets/badges/season1/badge_51.tscn" id="54_kp6n3"]
+[ext_resource type="PackedScene" uid="uid://hcvt3qdm5fk6" path="res://assets/badges/season1/badge_52.tscn" id="55_mwis1"]
+
+[node name="Node2D" type="CanvasLayer"]
+script = ExtResource("1_pi0oq")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("3_tcfer")
+metadata/_edit_lock_ = true
+
+[node name="ScreenBackground" type="TextureRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_svmdm")
+metadata/_edit_lock_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="BadgeName" type="RichTextLabel" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 72
+bbcode_enabled = true
+text = "[rainbow][center]BADGE NAME"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+metadata/_edit_lock_ = true
+
+[node name="s1_badges" type="Node2D" parent="Control"]
+visible = false
+
+[node name="Badge1" parent="Control/s1_badges" instance=ExtResource("4_ewywe")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge2" parent="Control/s1_badges" instance=ExtResource("5_2xkmc")]
+visible = false
+offset_right = 197.0
+offset_bottom = 197.0
+metadata/_edit_lock_ = true
+
+[node name="Badge3" parent="Control/s1_badges" instance=ExtResource("6_djak0")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge4" parent="Control/s1_badges" instance=ExtResource("7_ub6k4")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge5" parent="Control/s1_badges" instance=ExtResource("8_pspnx")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge6" parent="Control/s1_badges" instance=ExtResource("9_jxnnj")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge7" parent="Control/s1_badges" instance=ExtResource("10_k1fs7")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge8" parent="Control/s1_badges" instance=ExtResource("11_eftx1")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge9" parent="Control/s1_badges" instance=ExtResource("12_yignw")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge10" parent="Control/s1_badges" instance=ExtResource("13_6p2w7")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge11" parent="Control/s1_badges" instance=ExtResource("14_rt551")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge12" parent="Control/s1_badges" instance=ExtResource("15_bi5vi")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge13" parent="Control/s1_badges" instance=ExtResource("16_s4jfd")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge14" parent="Control/s1_badges" instance=ExtResource("17_xelpg")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge15" parent="Control/s1_badges" instance=ExtResource("18_wlg0s")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge16" parent="Control/s1_badges" instance=ExtResource("19_rehd1")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge17" parent="Control/s1_badges" instance=ExtResource("20_fgakv")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge18" parent="Control/s1_badges" instance=ExtResource("21_3mkjw")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge19" parent="Control/s1_badges" instance=ExtResource("22_fh220")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge20" parent="Control/s1_badges" instance=ExtResource("23_lxc63")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge21" parent="Control/s1_badges" instance=ExtResource("24_4876m")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge22" parent="Control/s1_badges" instance=ExtResource("25_ho1k1")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge23" parent="Control/s1_badges" instance=ExtResource("26_21chm")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge24" parent="Control/s1_badges" instance=ExtResource("27_b2bp7")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge25" parent="Control/s1_badges" instance=ExtResource("28_v5uao")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge26" parent="Control/s1_badges" instance=ExtResource("29_svhj7")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge27" parent="Control/s1_badges" instance=ExtResource("30_826ed")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge28" parent="Control/s1_badges" instance=ExtResource("31_ob51w")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge29" parent="Control/s1_badges" instance=ExtResource("32_lgyt1")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge30" parent="Control/s1_badges" instance=ExtResource("33_pkq6k")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge31" parent="Control/s1_badges" instance=ExtResource("34_rfoj0")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge32" parent="Control/s1_badges" instance=ExtResource("35_1jdux")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge33" parent="Control/s1_badges" instance=ExtResource("36_nh7gf")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge34" parent="Control/s1_badges" instance=ExtResource("37_4lir5")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge35" parent="Control/s1_badges" instance=ExtResource("38_etdbs")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge36" parent="Control/s1_badges" instance=ExtResource("39_3jipq")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge37" parent="Control/s1_badges" instance=ExtResource("40_2a3w7")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge38" parent="Control/s1_badges" instance=ExtResource("41_m8mhw")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge39" parent="Control/s1_badges" instance=ExtResource("42_esntr")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge40" parent="Control/s1_badges" instance=ExtResource("43_ej2o5")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge41" parent="Control/s1_badges" instance=ExtResource("44_ehb1w")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge42" parent="Control/s1_badges" instance=ExtResource("45_qkiwn")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge43" parent="Control/s1_badges" instance=ExtResource("46_bjymq")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge44" parent="Control/s1_badges" instance=ExtResource("47_84f67")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge45" parent="Control/s1_badges" instance=ExtResource("48_shn7f")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge46" parent="Control/s1_badges" instance=ExtResource("49_u3tid")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge47" parent="Control/s1_badges" instance=ExtResource("50_iom1w")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge48" parent="Control/s1_badges" instance=ExtResource("51_eking")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge49" parent="Control/s1_badges" instance=ExtResource("52_57rta")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge50" parent="Control/s1_badges" instance=ExtResource("53_juol1")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge51" parent="Control/s1_badges" instance=ExtResource("54_kp6n3")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="Badge52" parent="Control/s1_badges" instance=ExtResource("55_mwis1")]
+visible = false
+offset_right = 180.0
+offset_bottom = 180.0
+metadata/_edit_lock_ = true
+
+[node name="s2_badges" type="Node2D" parent="Control"]
+visible = false
+
+[node name="s3_badges" type="Node2D" parent="Control"]
+visible = false
+
+[node name="s4_badges" type="Node2D" parent="Control"]
+visible = false
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.009
+anchor_top = 0.864
+anchor_right = 0.168
+anchor_bottom = 0.983
+offset_left = -0.368001
+offset_top = 0.127991
+offset_right = 0.463989
+offset_bottom = 0.0159912
+theme_override_colors/font_color = Color(0.978632, 0.74623, 0.392828, 1)
+theme_override_font_sizes/font_size = 28
+text = "Main Menu"
+script = ExtResource("4_im1qq")
+
+[node name="Button2" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.826
+anchor_top = 0.864
+anchor_right = 0.995
+anchor_bottom = 0.988
+offset_left = 0.447937
+offset_top = 0.127991
+offset_right = -0.240112
+offset_bottom = -0.223999
+grow_horizontal = 0
+text = "Settings"
+script = ExtResource("5_u0qf3")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://5h3a47wigqnf"]
+
+[ext_resource type="Texture2D" uid="uid://blkox7obeofw" path="res://assets/badges/season1/images/The Hiccup Badge.webp" id="1_hsj8r"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_uircb"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_hsj8r")
+script = ExtResource("2_uircb")
+badge_name = "The Hiccup Badge"

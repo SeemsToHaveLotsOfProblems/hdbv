@@ -6,11 +6,11 @@ extends HBoxContainer
 
 var season_count: int = 1 : 
 	set(value):
-		var num: PackedStringArray = DirAccess.get_directories_at(GlobalValues.asset_location)
-		if value > num.size():
+		var num: int = GlobalValues.seasons_avalible
+		if value > num:
 			season_count = 1
 		elif value < 1:
-			season_count = num.size()
+			season_count = num
 		else:
 			season_count = value
 

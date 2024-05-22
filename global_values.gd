@@ -5,6 +5,7 @@ enum current_scene {
 	VIEWING_BADGES,
 }
 
+const seasons_avalible: int = 4
 const asset_location: String = "res://assets/badges/"
 
 var scene: int = current_scene.MAIN_MENU

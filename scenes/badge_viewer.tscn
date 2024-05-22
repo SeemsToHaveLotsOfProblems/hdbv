@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=3 uid="uid://cm7ii5ay3nist"]
+[gd_scene load_steps=60 format=3 uid="uid://cm7ii5ay3nist"]
 
 [ext_resource type="Script" path="res://scenes/swipe_script.gd" id="1_pi0oq"]
 [ext_resource type="Texture2D" uid="uid://cc75i0uav33kv" path="res://assets/background.png" id="2_svmdm"]
@@ -57,6 +57,8 @@
 [ext_resource type="PackedScene" uid="uid://ctlphcgt17rcn" path="res://assets/badges/season1/badge_50.tscn" id="53_juol1"]
 [ext_resource type="PackedScene" uid="uid://dx3c0m5s0bbs5" path="res://assets/badges/season1/badge_51.tscn" id="54_kp6n3"]
 [ext_resource type="PackedScene" uid="uid://hcvt3qdm5fk6" path="res://assets/badges/season1/badge_52.tscn" id="55_mwis1"]
+[ext_resource type="PackedScene" uid="uid://bs61hoi0u0hgo" path="res://assets/badges/season2/badge_1.tscn" id="56_bjgt2"]
+[ext_resource type="Texture2D" uid="uid://cmqk4bbnbhfxu" path="res://assets/badges/season2/images/Badge_S2_EP01_-_The_Making_Music_Badge.webp" id="57_eyswi"]
 
 [node name="Node2D" type="CanvasLayer"]
 script = ExtResource("1_pi0oq")
@@ -419,6 +421,10 @@ metadata/_edit_lock_ = true
 
 [node name="s2_badges" type="Node2D" parent="Control"]
 visible = false
+
+[node name="Badge1" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+texture = ExtResource("57_eyswi")
+badge_name = "The Making Music Badge"
 
 [node name="s3_badges" type="Node2D" parent="Control"]
 visible = false

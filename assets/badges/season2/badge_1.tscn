@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bs61hoi0u0hgo"]
+
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="1_epxgf"]
+
+[node name="Badge1" type="TextureRect"]
+script = ExtResource("1_epxgf")
+badge_name = ""

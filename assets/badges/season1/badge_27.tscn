@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://ffh6tud1xtdo"]
+
+[ext_resource type="Texture2D" uid="uid://k2e7uyhxgt42" path="res://assets/badges/season1/images/The Maze Badge.webp" id="1_f657u"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_55w7j"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_f657u")
+script = ExtResource("2_55w7j")
+badge_name = "The Maze Badge"

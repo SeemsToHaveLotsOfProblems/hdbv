@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://43fvlv1psj1f"]
+
+[ext_resource type="Texture2D" uid="uid://dq5rufaa2e8k4" path="res://assets/badges/season1/images/The Tidy Up Badge.webp" id="1_onbqo"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_kbvs1"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_onbqo")
+script = ExtResource("2_kbvs1")
+badge_name = "The Tidy Up Badge"

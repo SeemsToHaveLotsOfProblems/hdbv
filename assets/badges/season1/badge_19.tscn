@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://77o3f0gyx4fr"]
+
+[ext_resource type="Texture2D" uid="uid://bon2cgofjwte2" path="res://assets/badges/season1/images/The Football Badge.webp" id="1_6icey"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_gf1ft"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_6icey")
+script = ExtResource("2_gf1ft")
+badge_name = "The Football Badge"

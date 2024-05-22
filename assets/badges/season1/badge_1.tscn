@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://byhu0lfvao5j3"]
+
+[ext_resource type="Texture2D" uid="uid://sdgbhht3mtmq" path="res://assets/badges/season1/images/the_acorn_badge.png" id="1_1o1wl"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_v267u"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_1o1wl")
+script = ExtResource("2_v267u")
+badge_name = "The Acorn Badge"

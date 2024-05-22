@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://kc5xi0aygv8n"]
+
+[ext_resource type="Texture2D" uid="uid://mbad2df2kpxa" path="res://assets/badges/season1/images/The Teddy Bear Badge.webp" id="1_ih5nf"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_5g66u"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_ih5nf")
+script = ExtResource("2_5g66u")
+badge_name = "The Teddy Bear Badge"

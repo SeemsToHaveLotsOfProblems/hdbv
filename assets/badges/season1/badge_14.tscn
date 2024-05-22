@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwh88sml2okn"]
+
+[ext_resource type="Texture2D" uid="uid://hcl2ycmpd0vr" path="res://assets/badges/season1/images/The Detective Badge.webp" id="1_77u5u"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_14e4c"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_77u5u")
+script = ExtResource("2_14e4c")
+badge_name = "The Detective Badge"

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://ofj2s1qcfgbv"]
+
+[ext_resource type="Texture2D" uid="uid://dvisco24c5sad" path="res://assets/badges/season1/images/The Get Well Soon Badge.webp" id="1_opboo"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_mbx80"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_opboo")
+script = ExtResource("2_mbx80")
+badge_name = "The Get Well Soon Badge"

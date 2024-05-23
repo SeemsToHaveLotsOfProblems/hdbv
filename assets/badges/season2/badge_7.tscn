@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtfguywecm0ic"]
+
+[ext_resource type="Texture2D" uid="uid://bscsmdrqrhxcq" path="res://assets/badges/season2/images/Badge_S2_EP07_-_The_Treehouse_Badge.webp" id="1_xoam8"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_hnw01"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_xoam8")
+script = ExtResource("2_hnw01")
+badge_name = "The Treehouse Badge"

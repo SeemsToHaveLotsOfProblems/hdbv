@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bydjs0kvfhe7q"]
+
+[ext_resource type="Texture2D" uid="uid://64e7261jq6ik" path="res://assets/badges/season2/images/Badge_S2_EP13_-_The_Dancing_Bug_Badge.webp" id="1_fsckn"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_ygj7j"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_fsckn")
+script = ExtResource("2_ygj7j")
+badge_name = "The Dancing Badge"

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://gj6qi1ff0xvn"]
+
+[ext_resource type="Texture2D" uid="uid://cu7r85arxp32p" path="res://assets/badges/season2/images/Badge_S2_EP20_-_The_Yoga_Badge.webp" id="1_1iho3"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_smeyq"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_1iho3")
+script = ExtResource("2_smeyq")
+badge_name = "The Yoga Badge"

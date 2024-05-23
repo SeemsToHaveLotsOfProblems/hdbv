@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://ym2huo8fnc7n"]
+
+[ext_resource type="Texture2D" uid="uid://bdasfncjccqvg" path="res://assets/badges/season2/images/Badge_S2_EP19_-_The_River_Badge.webp" id="1_050vr"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_c03f5"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_050vr")
+script = ExtResource("2_c03f5")
+badge_name = "The River Badge"

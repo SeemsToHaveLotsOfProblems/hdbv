@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0ywvwiiied1"]
+
+[ext_resource type="Texture2D" uid="uid://chcjfxug3ge14" path="res://assets/badges/season2/images/Badge_S2_EP06_-_The_Fossil_Badge.webp" id="1_n3gym"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_2h2sp"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_n3gym")
+script = ExtResource("2_2h2sp")
+badge_name = "The Fossil Badge"

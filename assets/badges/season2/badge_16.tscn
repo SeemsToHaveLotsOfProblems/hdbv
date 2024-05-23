@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://5hday0mof3ww"]
+
+[ext_resource type="Texture2D" uid="uid://8rb6rw1eua74" path="res://assets/badges/season2/images/Badge_S2_EP16_-_The_Medicine_Badge.webp" id="1_ipr06"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_c8ouo"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_ipr06")
+script = ExtResource("2_c8ouo")
+badge_name = "The Medicine Badge"

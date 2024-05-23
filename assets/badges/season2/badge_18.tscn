@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7jr5mo3uyxwf"]
+
+[ext_resource type="Texture2D" uid="uid://feyn1c87xflm" path="res://assets/badges/season2/images/Badge_S2_EP18_-_The_Making_Friends_Badge.webp" id="1_0lwaa"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_utl6m"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_0lwaa")
+script = ExtResource("2_utl6m")
+badge_name = "The Making Friends Badge"

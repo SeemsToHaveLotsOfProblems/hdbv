@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bx017w7deex3p"]
+
+[ext_resource type="Texture2D" uid="uid://cf0iclo2grxxs" path="res://assets/badges/season2/images/Badge_S2_EP05_-_The_Footprint_Badge.webp" id="1_ni8x2"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_nsqgo"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_ni8x2")
+script = ExtResource("2_nsqgo")
+badge_name = "The Footprint Badge"

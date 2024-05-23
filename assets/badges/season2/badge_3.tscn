@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtuxahcu0m3tu"]
+
+[ext_resource type="Texture2D" uid="uid://u8f8vqc24mha" path="res://assets/badges/season2/images/Badge_S2_EP03_-_The_Shape_Badge.webp" id="1_dbx4p"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_uhek7"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_dbx4p")
+script = ExtResource("2_uhek7")
+badge_name = "The Shape Badge"

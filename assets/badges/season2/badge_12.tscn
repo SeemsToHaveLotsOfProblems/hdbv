@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://drmbcddpkh6s7"]
+
+[ext_resource type="Texture2D" uid="uid://djwtic8vnf1k3" path="res://assets/badges/season2/images/Badge_S2_EP12_-_The_Teamwork_Badge.webp" id="1_ofiba"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_qtrq3"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_ofiba")
+script = ExtResource("2_qtrq3")
+badge_name = "The Teamwork Badge"

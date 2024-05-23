@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://balm60d8nqvux"]
+
+[ext_resource type="Texture2D" uid="uid://lwhrcpkkeyup" path="res://assets/badges/season2/images/Badge_S2_EP21_-_The_Collecting_Badge.webp" id="1_tnew3"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_ac4bs"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_tnew3")
+script = ExtResource("2_ac4bs")
+badge_name = "The Collecting Badge"

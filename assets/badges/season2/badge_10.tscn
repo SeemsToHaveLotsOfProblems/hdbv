@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpkiratdkoep1"]
+
+[ext_resource type="Texture2D" uid="uid://c2aie64f4n2ts" path="res://assets/badges/season2/images/Badge_S2_EP09_-_The_Tadpole_Badge.webp" id="1_j3jjp"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_dhc7s"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_j3jjp")
+script = ExtResource("2_dhc7s")
+badge_name = "The Tadpole Badge"

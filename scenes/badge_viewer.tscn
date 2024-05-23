@@ -426,6 +426,159 @@ visible = false
 texture = ExtResource("57_eyswi")
 badge_name = "The Making Music Badge"
 
+[node name="Badge2" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge3" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge4" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge5" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge6" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge7" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge8" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge9" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge10" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge11" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge12" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge13" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge14" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge15" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge16" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge17" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge18" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge19" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge20" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge21" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge22" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge23" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge24" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge25" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge26" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge27" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge28" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge29" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge30" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge31" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge32" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge33" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge34" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge35" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge36" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge37" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge38" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge39" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge40" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge41" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge42" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge43" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge44" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge45" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge46" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge47" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge48" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge49" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge50" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge51" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
+[node name="Badge52" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
+badge_name = "The Making Music Badge"
+
 [node name="s3_badges" type="Node2D" parent="Control"]
 visible = false
 

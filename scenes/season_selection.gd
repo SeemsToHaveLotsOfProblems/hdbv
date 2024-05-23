@@ -25,7 +25,8 @@ var colors: PackedStringArray = [
 
 func _ready() -> void:
 	GlobalValues.scene = GlobalValues.current_scene.MAIN_MENU
-	GlobalValues.season = season_count
+	season_count = GlobalValues.season
+	#GlobalValues.season = season_count
 	season_name.text = colors[season_count -1] + "SEASON " + str(season_count)
 
 

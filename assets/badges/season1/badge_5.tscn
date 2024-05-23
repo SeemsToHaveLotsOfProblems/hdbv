@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://b1lobg8x8ejby"]
-
-[ext_resource type="Texture2D" uid="uid://daaynqr8s6yoj" path="res://assets/badges/season1/images/The Birdwatching Badge.webp" id="1_jlg7l"]
-[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_2h1k3"]
-
-[node name="Badge1" type="TextureRect"]
-texture = ExtResource("1_jlg7l")
-script = ExtResource("2_2h1k3")
-badge_name = "The Birdwatching Badge"

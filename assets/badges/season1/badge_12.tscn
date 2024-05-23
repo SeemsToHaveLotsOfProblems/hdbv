@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://dgeiw6cun7jgu"]
-
-[ext_resource type="Texture2D" uid="uid://cplr50f8v7dxn" path="res://assets/badges/season1/images/The Circus Badge.webp" id="1_p7317"]
-[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_ct32u"]
-
-[node name="Badge1" type="TextureRect"]
-texture = ExtResource("1_p7317")
-script = ExtResource("2_ct32u")
-badge_name = "The Circus Badge"

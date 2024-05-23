@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://bl8j0xbtamdat"]
-
-[ext_resource type="Texture2D" uid="uid://bjb86crgielhs" path="res://assets/badges/season1/images/The Sheep Badge.webp" id="1_o2nvw"]
-[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_s8ve3"]
-
-[node name="Badge1" type="TextureRect"]
-texture = ExtResource("1_o2nvw")
-script = ExtResource("2_s8ve3")
-badge_name = "The Sheep Badge"

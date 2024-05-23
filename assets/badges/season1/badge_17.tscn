@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://cm7hq8b5g6gdr"]
-
-[ext_resource type="Texture2D" uid="uid://dnr0vqbm36p8h" path="res://assets/badges/season1/images/The First Aid Badge.webp" id="1_c5pws"]
-[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_3ielg"]
-
-[node name="Badge1" type="TextureRect"]
-texture = ExtResource("1_c5pws")
-script = ExtResource("2_3ielg")
-badge_name = "The First Aid Badge"

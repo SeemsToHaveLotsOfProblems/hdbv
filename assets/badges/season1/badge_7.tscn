@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://cl2c0obgq3f1l"]
-
-[ext_resource type="Texture2D" uid="uid://uq7a3pb5lxeu" path="res://assets/badges/season1/images/The Bubble Badge.webp" id="1_tdq50"]
-[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_vadr0"]
-
-[node name="Badge1" type="TextureRect"]
-texture = ExtResource("1_tdq50")
-script = ExtResource("2_vadr0")
-badge_name = "The Boubble Badge"

@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://l5lw3qq6wxl3"]
-
-[ext_resource type="Texture2D" uid="uid://ib713i1tft14" path="res://assets/badges/season1/images/The Caterpillar Badge.webp" id="1_ddesf"]
-[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_o25hn"]
-
-[node name="Badge1" type="TextureRect"]
-texture = ExtResource("1_ddesf")
-script = ExtResource("2_o25hn")
-badge_name = "The Caterpillar Badge"

@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://c0ja1ertf36rc"]
-
-[ext_resource type="Texture2D" uid="uid://bj5i4bxqqaexc" path="res://assets/badges/season1/images/The Bouncing Badge.webp" id="1_nkwju"]
-[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_l5sx2"]
-
-[node name="Badge1" type="TextureRect"]
-texture = ExtResource("1_nkwju")
-script = ExtResource("2_l5sx2")
-badge_name = "The Bouncing Badge"

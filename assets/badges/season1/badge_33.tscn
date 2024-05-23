@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://drkfefvwswrvw"]
-
-[ext_resource type="Texture2D" uid="uid://dnck6uw71vrmo" path="res://assets/badges/season1/images/The Rain Dance Badge.webp" id="1_6l0er"]
-[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_d5o2s"]
-
-[node name="Badge1" type="TextureRect"]
-texture = ExtResource("1_6l0er")
-script = ExtResource("2_d5o2s")
-badge_name = "The Rain Dance Badge"

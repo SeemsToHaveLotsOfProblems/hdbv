@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://cai468pvhlqu1"]
-
-[ext_resource type="Texture2D" uid="uid://14g7d4214a7" path="res://assets/badges/season1/images/The Food Growing Badge.webp" id="1_3cikv"]
-[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_bdu01"]
-
-[node name="Badge1" type="TextureRect"]
-texture = ExtResource("1_3cikv")
-script = ExtResource("2_bdu01")
-badge_name = "The Food Growing Badge"

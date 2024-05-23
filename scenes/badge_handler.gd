@@ -52,20 +52,19 @@ func _input(event: InputEvent) -> void:
 
 # Finds the number of badges in the season.
 func find_badge_count() -> void:
-	var dir := DirAccess.open("res://assets/badges/season" + str(season_choice) + "/")
+	var dir := DirAccess.open(GlobalValues.asset_location + "season" + str(season_choice) + "/")
 	if dir:
 		var tmp: PackedStringArray = dir.get_files()
 		for i in tmp:
 			for x in accepted_extentions:
 				if i.ends_with(x):
-					print("Added: ", i, " to the badge list!")
 					badge_files.append(i)
 		total_badges_in_season = badge_files.size()
 
 
 func change_badge() -> void:
 	var _badge_name: PackedStringArray = badge_files[badge_itr].rsplit(".import")
-	var img_txt := ResourceLoader.load("res://assets/badges/season" + str(season_choice) + "/" + _badge_name[0])
+	var img_txt := ResourceLoader.load(GlobalValues.asset_location + "season" + str(season_choice) + "/" + _badge_name[0])
 	badge.position = badge_pos[GlobalValues.BADGE_SCALE.x - 1]
 	badge.scale = GlobalValues.BADGE_SCALE
 	badge.texture = img_txt

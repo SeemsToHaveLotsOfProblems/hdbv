@@ -65,6 +65,12 @@ func find_badge_count() -> void:
 	match season_choice:
 		1:
 			total_badges_in_season = s1_badges.get_child_count()
+		2:
+			total_badges_in_season = s2_badges.get_child_count()
+		3:
+			total_badges_in_season = s3_badges.get_child_count()
+		4:
+			total_badges_in_season = s4_badges.get_child_count()
 		_:
 			GlobalValues.error_handler("Unable to find the chosen season", "badge_handler.gd", 53, 58)
 

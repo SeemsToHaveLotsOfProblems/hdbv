@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bax6frnf5rprb"]
+
+[ext_resource type="Texture2D" uid="uid://ctlt1iknxa2q6" path="res://assets/badges/season2/images/Badge_S2_EP36_-_The_Water_Badge.webp" id="1_802vj"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_vevjw"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_802vj")
+script = ExtResource("2_vevjw")
+badge_name = "The Water Badge"

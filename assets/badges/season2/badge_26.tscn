@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cht4h55thacwc"]
+
+[ext_resource type="Texture2D" uid="uid://c4fubbv48xnbg" path="res://assets/badges/season2/images/Badge_S2_EP26_-_The_Obstacle_Course_Badge.webp" id="1_k3e5p"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_xom1g"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_k3e5p")
+script = ExtResource("2_xom1g")
+badge_name = "The Obstacle Course Badge"

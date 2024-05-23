@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://d01adyjclop1a"]
+
+[ext_resource type="Texture2D" uid="uid://c82uxg8hvck0j" path="res://assets/badges/season2/images/Badge_S2_EP45_-_The_Singing_Badge.webp" id="1_aorva"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_kveu5"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_aorva")
+script = ExtResource("2_kveu5")
+badge_name = "The Singing Badge"

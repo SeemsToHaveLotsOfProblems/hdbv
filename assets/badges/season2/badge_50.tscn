@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dngxw5tn31y1y"]
+
+[ext_resource type="Texture2D" uid="uid://f5qljlc7q1lg" path="res://assets/badges/season2/images/Badge_S2_EP50_-_The_Key_Badge.webp" id="1_0srva"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_8q3df"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_0srva")
+script = ExtResource("2_8q3df")
+badge_name = "The Key Badge"

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://l601rhdoxbgt"]
+
+[ext_resource type="Texture2D" uid="uid://bm7lyl7lnl4vp" path="res://assets/badges/season2/images/Badge_S2_EP35_-_The_Brave_Banana_Badge.webp" id="1_h3b30"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_8acvo"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_h3b30")
+script = ExtResource("2_8acvo")
+badge_name = "The Brave Badge"

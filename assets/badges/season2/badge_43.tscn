@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cltdl1ho8ytfp"]
+
+[ext_resource type="Texture2D" uid="uid://bfmyjdwin1fi8" path="res://assets/badges/season2/images/Badge_S2_EP43_-_The_Looking_After_Badge.webp" id="1_gly7w"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_bbve1"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_gly7w")
+script = ExtResource("2_bbve1")
+badge_name = "The Looking After Badge"

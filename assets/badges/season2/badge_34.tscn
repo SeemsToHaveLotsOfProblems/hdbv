@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://0yr8f5ytxciq"]
+
+[ext_resource type="Texture2D" uid="uid://1nv1df47x4ym" path="res://assets/badges/season2/images/Badge_S2_EP34_-_The_Sleeping_Badge.webp" id="1_2s3tu"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_7ejqf"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_2s3tu")
+script = ExtResource("2_7ejqf")
+badge_name = "The Sleeping Badge"

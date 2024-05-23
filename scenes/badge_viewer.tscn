@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=3 uid="uid://cm7ii5ay3nist"]
+[gd_scene load_steps=110 format=3 uid="uid://cm7ii5ay3nist"]
 
 [ext_resource type="Script" path="res://scenes/swipe_script.gd" id="1_pi0oq"]
 [ext_resource type="Texture2D" uid="uid://cc75i0uav33kv" path="res://assets/background.png" id="2_svmdm"]
@@ -58,7 +58,57 @@
 [ext_resource type="PackedScene" uid="uid://dx3c0m5s0bbs5" path="res://assets/badges/season1/badge_51.tscn" id="54_kp6n3"]
 [ext_resource type="PackedScene" uid="uid://hcvt3qdm5fk6" path="res://assets/badges/season1/badge_52.tscn" id="55_mwis1"]
 [ext_resource type="PackedScene" uid="uid://bs61hoi0u0hgo" path="res://assets/badges/season2/badge_1.tscn" id="56_bjgt2"]
-[ext_resource type="Texture2D" uid="uid://cmqk4bbnbhfxu" path="res://assets/badges/season2/images/Badge_S2_EP01_-_The_Making_Music_Badge.webp" id="57_eyswi"]
+[ext_resource type="PackedScene" uid="uid://c85u7xqxc7e43" path="res://assets/badges/season2/badge_2.tscn" id="57_3ilur"]
+[ext_resource type="PackedScene" uid="uid://dtuxahcu0m3tu" path="res://assets/badges/season2/badge_3.tscn" id="58_pvsxy"]
+[ext_resource type="PackedScene" uid="uid://brsru4slpx6kw" path="res://assets/badges/season2/badge_4.tscn" id="59_irwjf"]
+[ext_resource type="PackedScene" uid="uid://bx017w7deex3p" path="res://assets/badges/season2/badge_5.tscn" id="60_7mpd7"]
+[ext_resource type="PackedScene" uid="uid://d0ywvwiiied1" path="res://assets/badges/season2/badge_6.tscn" id="61_f8nrx"]
+[ext_resource type="PackedScene" uid="uid://dtfguywecm0ic" path="res://assets/badges/season2/badge_7.tscn" id="62_bdu0e"]
+[ext_resource type="PackedScene" uid="uid://qw8ho0m7rmbh" path="res://assets/badges/season2/badge_8.tscn" id="63_ig1ji"]
+[ext_resource type="PackedScene" uid="uid://bhbygxx635xdw" path="res://assets/badges/season2/badge_9.tscn" id="64_ujhjh"]
+[ext_resource type="PackedScene" uid="uid://dpkiratdkoep1" path="res://assets/badges/season2/badge_10.tscn" id="65_sr7ax"]
+[ext_resource type="PackedScene" uid="uid://bpk28dfhy7d2b" path="res://assets/badges/season2/badge_11.tscn" id="66_0ken7"]
+[ext_resource type="PackedScene" uid="uid://drmbcddpkh6s7" path="res://assets/badges/season2/badge_12.tscn" id="67_jjgas"]
+[ext_resource type="PackedScene" uid="uid://bydjs0kvfhe7q" path="res://assets/badges/season2/badge_13.tscn" id="68_uubg6"]
+[ext_resource type="PackedScene" uid="uid://dng7o08hgsoe3" path="res://assets/badges/season2/badge_14.tscn" id="69_tk040"]
+[ext_resource type="PackedScene" uid="uid://b4aoiumaxtjfa" path="res://assets/badges/season2/badge_15.tscn" id="70_fyrlr"]
+[ext_resource type="PackedScene" uid="uid://5hday0mof3ww" path="res://assets/badges/season2/badge_16.tscn" id="71_4ohsn"]
+[ext_resource type="PackedScene" uid="uid://be33wnhyuy1e8" path="res://assets/badges/season2/badge_17.tscn" id="72_bs83g"]
+[ext_resource type="PackedScene" uid="uid://b7jr5mo3uyxwf" path="res://assets/badges/season2/badge_18.tscn" id="73_vomex"]
+[ext_resource type="PackedScene" uid="uid://ym2huo8fnc7n" path="res://assets/badges/season2/badge_19.tscn" id="74_4k61c"]
+[ext_resource type="PackedScene" uid="uid://gj6qi1ff0xvn" path="res://assets/badges/season2/badge_20.tscn" id="75_2wyjd"]
+[ext_resource type="PackedScene" uid="uid://balm60d8nqvux" path="res://assets/badges/season2/badge_21.tscn" id="76_3hc5x"]
+[ext_resource type="PackedScene" uid="uid://dq7ni6mwye7ev" path="res://assets/badges/season2/badge_22.tscn" id="77_itpr6"]
+[ext_resource type="PackedScene" uid="uid://dj6liyejly4a6" path="res://assets/badges/season2/badge_23.tscn" id="78_d4lju"]
+[ext_resource type="PackedScene" uid="uid://dc6bcplkqbduh" path="res://assets/badges/season2/badge_24.tscn" id="79_4rrw6"]
+[ext_resource type="PackedScene" uid="uid://cdmbo38ru7lpb" path="res://assets/badges/season2/badge_25.tscn" id="80_glc3e"]
+[ext_resource type="PackedScene" uid="uid://cht4h55thacwc" path="res://assets/badges/season2/badge_26.tscn" id="81_j5d5p"]
+[ext_resource type="PackedScene" uid="uid://db6flpesbcdmu" path="res://assets/badges/season2/badge_27.tscn" id="82_nsddq"]
+[ext_resource type="PackedScene" uid="uid://dpdhof1mlt8iw" path="res://assets/badges/season2/badge_28.tscn" id="83_e5mhj"]
+[ext_resource type="PackedScene" uid="uid://c0ml348no58on" path="res://assets/badges/season2/badge_29.tscn" id="84_egw3k"]
+[ext_resource type="PackedScene" uid="uid://byo4fkl6smn67" path="res://assets/badges/season2/badge_30.tscn" id="85_xmkjb"]
+[ext_resource type="PackedScene" uid="uid://hk18n8pj3liu" path="res://assets/badges/season2/badge_31.tscn" id="86_vnqgp"]
+[ext_resource type="PackedScene" uid="uid://k5rnnwvaphka" path="res://assets/badges/season2/badge_32.tscn" id="87_eyo7w"]
+[ext_resource type="PackedScene" uid="uid://cp3e5l1h28tv0" path="res://assets/badges/season2/badge_33.tscn" id="88_p3r7d"]
+[ext_resource type="PackedScene" uid="uid://0yr8f5ytxciq" path="res://assets/badges/season2/badge_34.tscn" id="89_uahid"]
+[ext_resource type="PackedScene" uid="uid://l601rhdoxbgt" path="res://assets/badges/season2/badge_35.tscn" id="90_ab6ss"]
+[ext_resource type="PackedScene" uid="uid://bax6frnf5rprb" path="res://assets/badges/season2/badge_36.tscn" id="91_6wiof"]
+[ext_resource type="PackedScene" uid="uid://ew3608w0t18t" path="res://assets/badges/season2/badge_37.tscn" id="92_k1u1d"]
+[ext_resource type="PackedScene" uid="uid://dcvur0vbed0id" path="res://assets/badges/season2/badge_38.tscn" id="93_o0bec"]
+[ext_resource type="PackedScene" uid="uid://d35w0ndc7j72o" path="res://assets/badges/season2/badge_39.tscn" id="94_w2aae"]
+[ext_resource type="PackedScene" uid="uid://bs7nkp5g01j5x" path="res://assets/badges/season2/badge_40.tscn" id="95_csgal"]
+[ext_resource type="PackedScene" uid="uid://c02wki7wy0d1q" path="res://assets/badges/season2/badge_41.tscn" id="96_rtisd"]
+[ext_resource type="PackedScene" uid="uid://dyqul4q2b8r" path="res://assets/badges/season2/badge_42.tscn" id="97_quehs"]
+[ext_resource type="PackedScene" uid="uid://cltdl1ho8ytfp" path="res://assets/badges/season2/badge_43.tscn" id="98_dessm"]
+[ext_resource type="PackedScene" uid="uid://b1tk5cgihsbb2" path="res://assets/badges/season2/badge_44.tscn" id="99_moa1q"]
+[ext_resource type="PackedScene" uid="uid://d01adyjclop1a" path="res://assets/badges/season2/badge_45.tscn" id="100_hs0xl"]
+[ext_resource type="PackedScene" uid="uid://4rhsxe23wgmk" path="res://assets/badges/season2/badge_46.tscn" id="101_evbil"]
+[ext_resource type="PackedScene" uid="uid://cgsxh4wy2dj4w" path="res://assets/badges/season2/badge_47.tscn" id="102_cr0hn"]
+[ext_resource type="PackedScene" uid="uid://w0nflsu8yntx" path="res://assets/badges/season2/badge_48.tscn" id="103_6wl4o"]
+[ext_resource type="PackedScene" uid="uid://hcuht4nfb8jj" path="res://assets/badges/season2/badge_49.tscn" id="104_yq17y"]
+[ext_resource type="PackedScene" uid="uid://dngxw5tn31y1y" path="res://assets/badges/season2/badge_50.tscn" id="105_37w6a"]
+[ext_resource type="PackedScene" uid="uid://c3e8xpa8trwfm" path="res://assets/badges/season2/badge_51.tscn" id="106_x1xxx"]
+[ext_resource type="PackedScene" uid="uid://bfhndqifq2aue" path="res://assets/badges/season2/badge_52.tscn" id="107_48vhj"]
 
 [node name="Node2D" type="CanvasLayer"]
 script = ExtResource("1_pi0oq")
@@ -422,162 +472,161 @@ metadata/_edit_lock_ = true
 [node name="s2_badges" type="Node2D" parent="Control"]
 visible = false
 
-[node name="Badge1" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-texture = ExtResource("57_eyswi")
-badge_name = "The Making Music Badge"
-
 [node name="Badge2" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+visible = false
 
-[node name="Badge3" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge3" parent="Control/s2_badges" instance=ExtResource("57_3ilur")]
+visible = false
 
-[node name="Badge4" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge4" parent="Control/s2_badges" instance=ExtResource("58_pvsxy")]
+visible = false
 
-[node name="Badge5" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge5" parent="Control/s2_badges" instance=ExtResource("59_irwjf")]
+visible = false
 
-[node name="Badge6" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge6" parent="Control/s2_badges" instance=ExtResource("60_7mpd7")]
+visible = false
 
-[node name="Badge7" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge7" parent="Control/s2_badges" instance=ExtResource("61_f8nrx")]
+visible = false
 
-[node name="Badge8" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge8" parent="Control/s2_badges" instance=ExtResource("62_bdu0e")]
+visible = false
 
-[node name="Badge9" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge9" parent="Control/s2_badges" instance=ExtResource("63_ig1ji")]
+visible = false
 
-[node name="Badge10" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge10" parent="Control/s2_badges" instance=ExtResource("64_ujhjh")]
+visible = false
 
-[node name="Badge11" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge11" parent="Control/s2_badges" instance=ExtResource("65_sr7ax")]
+visible = false
 
-[node name="Badge12" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge12" parent="Control/s2_badges" instance=ExtResource("66_0ken7")]
+visible = false
 
-[node name="Badge13" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge13" parent="Control/s2_badges" instance=ExtResource("67_jjgas")]
+visible = false
 
-[node name="Badge14" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge14" parent="Control/s2_badges" instance=ExtResource("68_uubg6")]
+visible = false
 
-[node name="Badge15" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge15" parent="Control/s2_badges" instance=ExtResource("69_tk040")]
+visible = false
 
-[node name="Badge16" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge16" parent="Control/s2_badges" instance=ExtResource("70_fyrlr")]
+visible = false
 
-[node name="Badge17" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge17" parent="Control/s2_badges" instance=ExtResource("71_4ohsn")]
+visible = false
 
-[node name="Badge18" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge18" parent="Control/s2_badges" instance=ExtResource("72_bs83g")]
+visible = false
 
-[node name="Badge19" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge19" parent="Control/s2_badges" instance=ExtResource("73_vomex")]
+visible = false
 
-[node name="Badge20" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge20" parent="Control/s2_badges" instance=ExtResource("74_4k61c")]
+visible = false
 
-[node name="Badge21" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge21" parent="Control/s2_badges" instance=ExtResource("75_2wyjd")]
+visible = false
 
-[node name="Badge22" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge22" parent="Control/s2_badges" instance=ExtResource("76_3hc5x")]
+visible = false
 
-[node name="Badge23" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge23" parent="Control/s2_badges" instance=ExtResource("77_itpr6")]
+visible = false
 
-[node name="Badge24" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge24" parent="Control/s2_badges" instance=ExtResource("78_d4lju")]
+visible = false
 
-[node name="Badge25" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge25" parent="Control/s2_badges" instance=ExtResource("79_4rrw6")]
+visible = false
 
-[node name="Badge26" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge26" parent="Control/s2_badges" instance=ExtResource("80_glc3e")]
+visible = false
 
-[node name="Badge27" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge27" parent="Control/s2_badges" instance=ExtResource("81_j5d5p")]
+visible = false
 
-[node name="Badge28" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge28" parent="Control/s2_badges" instance=ExtResource("82_nsddq")]
+visible = false
 
-[node name="Badge29" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge29" parent="Control/s2_badges" instance=ExtResource("83_e5mhj")]
+visible = false
 
-[node name="Badge30" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge30" parent="Control/s2_badges" instance=ExtResource("84_egw3k")]
+visible = false
 
-[node name="Badge31" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge31" parent="Control/s2_badges" instance=ExtResource("85_xmkjb")]
+visible = false
 
-[node name="Badge32" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge32" parent="Control/s2_badges" instance=ExtResource("86_vnqgp")]
+visible = false
 
-[node name="Badge33" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge33" parent="Control/s2_badges" instance=ExtResource("87_eyo7w")]
+visible = false
 
-[node name="Badge34" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge34" parent="Control/s2_badges" instance=ExtResource("88_p3r7d")]
+visible = false
 
-[node name="Badge35" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge35" parent="Control/s2_badges" instance=ExtResource("89_uahid")]
+visible = false
 
-[node name="Badge36" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge36" parent="Control/s2_badges" instance=ExtResource("90_ab6ss")]
+visible = false
 
-[node name="Badge37" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge37" parent="Control/s2_badges" instance=ExtResource("91_6wiof")]
+visible = false
 
-[node name="Badge38" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge38" parent="Control/s2_badges" instance=ExtResource("92_k1u1d")]
+visible = false
 
-[node name="Badge39" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge39" parent="Control/s2_badges" instance=ExtResource("93_o0bec")]
+visible = false
 
-[node name="Badge40" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge40" parent="Control/s2_badges" instance=ExtResource("94_w2aae")]
+visible = false
 
-[node name="Badge41" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge41" parent="Control/s2_badges" instance=ExtResource("95_csgal")]
+visible = false
 
-[node name="Badge42" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge42" parent="Control/s2_badges" instance=ExtResource("96_rtisd")]
+visible = false
 
-[node name="Badge43" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge43" parent="Control/s2_badges" instance=ExtResource("97_quehs")]
+visible = false
 
-[node name="Badge44" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge44" parent="Control/s2_badges" instance=ExtResource("98_dessm")]
+visible = false
 
-[node name="Badge45" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge45" parent="Control/s2_badges" instance=ExtResource("99_moa1q")]
+visible = false
 
-[node name="Badge46" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge46" parent="Control/s2_badges" instance=ExtResource("100_hs0xl")]
+visible = false
 
-[node name="Badge47" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge47" parent="Control/s2_badges" instance=ExtResource("101_evbil")]
+visible = false
 
-[node name="Badge48" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge48" parent="Control/s2_badges" instance=ExtResource("102_cr0hn")]
+visible = false
 
-[node name="Badge49" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge49" parent="Control/s2_badges" instance=ExtResource("103_6wl4o")]
+visible = false
 
-[node name="Badge50" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge50" parent="Control/s2_badges" instance=ExtResource("104_yq17y")]
+visible = false
 
-[node name="Badge51" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge51" parent="Control/s2_badges" instance=ExtResource("105_37w6a")]
+visible = false
 
-[node name="Badge52" parent="Control/s2_badges" instance=ExtResource("56_bjgt2")]
-badge_name = "The Making Music Badge"
+[node name="Badge52" parent="Control/s2_badges" instance=ExtResource("106_x1xxx")]
+visible = false
+
+[node name="Badge53" parent="Control/s2_badges" instance=ExtResource("107_48vhj")]
+visible = false
 
 [node name="s3_badges" type="Node2D" parent="Control"]
 visible = false

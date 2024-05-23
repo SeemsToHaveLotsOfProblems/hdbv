@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://byo4fkl6smn67"]
+
+[ext_resource type="Texture2D" uid="uid://14xo1o4y2rc6" path="res://assets/badges/season2/images/Badge_S2_EP30_-_The_Colour_Badge.webp" id="1_banbe"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_gk4ln"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_banbe")
+script = ExtResource("2_gk4ln")
+badge_name = "The Color Badge"

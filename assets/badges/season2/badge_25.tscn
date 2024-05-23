@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdmbo38ru7lpb"]
+
+[ext_resource type="Texture2D" uid="uid://cqcooaqbbi3as" path="res://assets/badges/season2/images/Badge_S2_EP25_-_The_Going_Slow_Badge.webp" id="1_hsmtl"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_i77gw"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_hsmtl")
+script = ExtResource("2_i77gw")
+badge_name = "The Going Slow Badge"

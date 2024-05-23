@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cp3e5l1h28tv0"]
+
+[ext_resource type="Texture2D" uid="uid://djtuw0hhwkxvj" path="res://assets/badges/season2/images/Badge_S2_EP33_-_The_Island_Badge.webp" id="1_b87is"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_rydlr"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_b87is")
+script = ExtResource("2_rydlr")
+badge_name = "The Island Badge"

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dj6liyejly4a6"]
+
+[ext_resource type="Texture2D" uid="uid://ccb1ovd76sqyk" path="res://assets/badges/season2/images/Badge_S2_EP23_-_The_Theatre_Badge.webp" id="1_ovbvv"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_4f5n7"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_ovbvv")
+script = ExtResource("2_4f5n7")
+badge_name = "The Theatre Badge"

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3e8xpa8trwfm"]
+
+[ext_resource type="Texture2D" uid="uid://bj454nsdi4rgk" path="res://assets/badges/season2/images/Badge_S2_EP51_-_The_Fashion_Badge.webp" id="1_4yqcb"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_t3knd"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_4yqcb")
+script = ExtResource("2_t3knd")
+badge_name = "The Fashion Badge"

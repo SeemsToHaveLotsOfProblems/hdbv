@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcvur0vbed0id"]
+
+[ext_resource type="Texture2D" uid="uid://brv7kurwc78jg" path="res://assets/badges/season2/images/Badge_S2_EP38_-_The_Dressing_Up_Badge.webp" id="1_6wg8d"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_4aqhw"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_6wg8d")
+script = ExtResource("2_4aqhw")
+badge_name = "The Dressing Up Badge"

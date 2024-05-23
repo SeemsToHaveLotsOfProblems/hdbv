@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://c02wki7wy0d1q"]
+
+[ext_resource type="Texture2D" uid="uid://5u5y16ebsud0" path="res://assets/badges/season2/images/Badge_S2_EP41_-_The_Grandparents_Badge.webp" id="1_alunl"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_ykqt6"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_alunl")
+script = ExtResource("2_ykqt6")
+badge_name = "The Grandparents Badge"

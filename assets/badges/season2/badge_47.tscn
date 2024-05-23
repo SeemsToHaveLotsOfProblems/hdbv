@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgsxh4wy2dj4w"]
+
+[ext_resource type="Texture2D" uid="uid://bplwopqonaokv" path="res://assets/badges/season2/images/Badge_S2_EP47_-_The_Party_Badge.webp" id="1_06a27"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_qni2n"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_06a27")
+script = ExtResource("2_qni2n")
+badge_name = "The Party Badge"

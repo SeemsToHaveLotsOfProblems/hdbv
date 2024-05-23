@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dq7ni6mwye7ev"]
+
+[ext_resource type="Texture2D" uid="uid://dwoqi1h7ix734" path="res://assets/badges/season2/images/Badge_S2_EP22_-_The_Shadow_Badge.webp" id="1_ft7et"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_4kpym"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_ft7et")
+script = ExtResource("2_4kpym")
+badge_name = "The Shadow Badge"

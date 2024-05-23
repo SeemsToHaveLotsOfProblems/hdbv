@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://hcuht4nfb8jj"]
+
+[ext_resource type="Texture2D" uid="uid://dobx7yaixbkxu" path="res://assets/badges/season2/images/Badge_S2_EP49_-_The_Sailing_Badge.webp" id="1_20ncd"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_q3xxy"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_20ncd")
+script = ExtResource("2_q3xxy")
+badge_name = "The Sailing Badge"

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyqul4q2b8r"]
+
+[ext_resource type="Texture2D" uid="uid://c0uo0hsm53g3b" path="res://assets/badges/season2/images/Badge_S2_EP42_-_The_Organising_Badge.webp" id="1_nrs1l"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_6mjpf"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_nrs1l")
+script = ExtResource("2_6mjpf")
+badge_name = "The Organising Badge"

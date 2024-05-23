@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://hk18n8pj3liu"]
+
+[ext_resource type="Texture2D" uid="uid://bdovpx5v5bmye" path="res://assets/badges/season2/images/Badge_S2_EP31_-_The_Stick_Badge.webp" id="1_35qlo"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_1xjen"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_35qlo")
+script = ExtResource("2_1xjen")
+badge_name = "The Stick Badge"

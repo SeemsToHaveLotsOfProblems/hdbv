@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://k5rnnwvaphka"]
+
+[ext_resource type="Texture2D" uid="uid://3fxbc11s3624" path="res://assets/badges/season2/images/Badge_S2_EP32_-_The_Voice_Badge.webp" id="1_hqvie"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_qaayq"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_hqvie")
+script = ExtResource("2_qaayq")
+badge_name = "The Voice Badge"

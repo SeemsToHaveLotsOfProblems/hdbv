@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1tk5cgihsbb2"]
+
+[ext_resource type="Texture2D" uid="uid://b7vv2lvj05wbe" path="res://assets/badges/season2/images/Badge_S2_EP44_-_The_Comedy_Badge.webp" id="1_kydwj"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_khqtp"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_kydwj")
+script = ExtResource("2_khqtp")
+badge_name = "The Comedy Badge"

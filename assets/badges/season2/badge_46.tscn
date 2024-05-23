@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://4rhsxe23wgmk"]
+
+[ext_resource type="Texture2D" uid="uid://b82600o2a3ucj" path="res://assets/badges/season2/images/Badge_S2_EP46_-_The_Playing_Badge.webp" id="1_6g3w3"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_wt8s7"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_6g3w3")
+script = ExtResource("2_wt8s7")
+badge_name = "The Playing Badge"

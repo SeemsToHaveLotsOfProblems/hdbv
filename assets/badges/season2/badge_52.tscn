@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfhndqifq2aue"]
+
+[ext_resource type="Texture2D" uid="uid://cwmhbfm6755y1" path="res://assets/badges/season2/images/Badge_S2_EP52_-_The_Glasses_Badge.webp" id="1_ydvca"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_71176"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_ydvca")
+script = ExtResource("2_71176")
+badge_name = "The Glasses Badge"

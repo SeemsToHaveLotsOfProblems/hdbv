@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpdhof1mlt8iw"]
+
+[ext_resource type="Texture2D" uid="uid://ft4yamj68d" path="res://assets/badges/season2/images/Badge_S2_EP28_-_The_Space_Badge.webp" id="1_xea1b"]
+[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_plyx6"]
+
+[node name="Badge1" type="TextureRect"]
+texture = ExtResource("1_xea1b")
+script = ExtResource("2_plyx6")
+badge_name = "The Space Badge"

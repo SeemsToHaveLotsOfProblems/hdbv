@@ -8,13 +8,14 @@ extends Control
 var season_choice: int = 1
 
 var badge_files: PackedStringArray 
+var user_badge_files: PackedStringArray
 var total_badges_in_season: int = 0
 
 var accepted_extentions: PackedStringArray = [
 	".jpeg.import",
 	".jpg.import",
 	".webp.import",
-	".png.import"
+	".png.import",
 ]
 
 # The count of where in the array the user is. Do not modify this directly.
@@ -67,7 +68,13 @@ func find_badge_count() -> void:
 
 func change_badge() -> void:
 	var _badge_name: PackedStringArray = badge_files[badge_itr].rsplit(".import")
-	var img_txt := ResourceLoader.load(GlobalValues.asset_location + "season" + str(season_choice) + "/" + _badge_name[0])
+	var img_txt: Texture2D
+	if badge_files[badge_itr] in user_badge_files:
+		# FIXME: This is an error with loading in the user made image!!!!!!!
+		print_debug(DataHandler.user_data_location + "s_" + str(season_choice) + "/" + _badge_name[0])
+		img_txt = ResourceLoader.load(DataHandler.user_data_location + "s_" + str(season_choice) + "/" + _badge_name[0])
+	else:
+		img_txt = ResourceLoader.load(GlobalValues.asset_location + "season" + str(season_choice) + "/" + _badge_name[0])
 	badge.position = badge_pos[GlobalValues.settings["badge_scale"] - 1]
 	badge.scale = Vector2(GlobalValues.settings["badge_scale"], GlobalValues.settings["badge_scale"])
 	badge.texture = img_txt
@@ -77,7 +84,19 @@ func change_badge() -> void:
 
 ## Checks the user data folder for bages that the user may add.
 func check_user_added_badges() -> void:
-	pass
+	var dir := DirAccess.open(DataHandler.user_season_dir)
+	for i in dir.get_directories():
+		# Checks the folder name to see if it matches the season number
+		if i == "s_" + str(GlobalValues.settings["season_itr"]):
+			# Find badges in folder and add them to the badge array.
+			var files := DirAccess.open(DataHandler.user_season_dir + "s_" + str(GlobalValues.settings["season_itr"]))
+			for y in files.get_files():
+				badge_files.append(y + ".import")
+				# Adding to a second array so I can properly track them for loading.
+				user_badge_files.append(y + ".import")
+				# Update the total badges in season variable so that the index
+				# will reach the new badges.
+				total_badges_in_season = badge_files.size()
 
 
 func next_badge() -> void:

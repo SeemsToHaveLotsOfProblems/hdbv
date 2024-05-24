@@ -12,6 +12,7 @@ var total_badges_in_season: int = 0
 
 var accepted_extentions: PackedStringArray = [
 	".jpeg.import",
+	".jpg.import",
 	".webp.import",
 	".png.import"
 ]
@@ -60,6 +61,8 @@ func find_badge_count() -> void:
 				if i.ends_with(x):
 					badge_files.append(i)
 		total_badges_in_season = badge_files.size()
+	
+	check_user_added_badges()
 
 
 func change_badge() -> void:
@@ -70,6 +73,11 @@ func change_badge() -> void:
 	badge.texture = img_txt
 	var bn: PackedStringArray = _badge_name[0].split(".")
 	badge_name.text = "[center][rainbow]" + bn[0]
+
+
+## Checks the user data folder for bages that the user may add.
+func check_user_added_badges() -> void:
+	pass
 
 
 func next_badge() -> void:

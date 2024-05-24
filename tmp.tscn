@@ -1,5 +1,0 @@
-[gd_scene format=3 uid="uid://byhxoo0rk225h"]
-
-[node name="TextureRect" type="TextureRect"]
-offset_right = 40.0
-offset_bottom = 40.0

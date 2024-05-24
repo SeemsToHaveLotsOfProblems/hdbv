@@ -21,6 +21,7 @@ config/icon="res://icon.png"
 
 SignalBus="*res://signal_bus.gd"
 GlobalValues="*res://global_values.gd"
+DataHandler="*res://data_handler.gd"
 
 [display]
 

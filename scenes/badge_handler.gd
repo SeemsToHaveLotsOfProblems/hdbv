@@ -29,11 +29,11 @@ var badge_pos: Array[Vector2] = [Vector2(463,271), Vector2(381,144), Vector2(305
 func _ready() -> void:
 	GlobalValues.scene = GlobalValues.current_scene.VIEWING_BADGES
 	# Setting the season to the user chosen season.
-	season_choice = GlobalValues.season
+	season_choice = GlobalValues.settings["season_itr"]
 	# Sets the badge back the the one being viewed last if applicable.
 	badge_itr = GlobalValues.current_badge_being_viewed
 	# Set the badge season
-	season_choice = GlobalValues.season
+	season_choice = GlobalValues.settings["season_itr"]
 	# Find badges in the season
 	find_badge_count()
 	# Display a badge
@@ -65,8 +65,8 @@ func find_badge_count() -> void:
 func change_badge() -> void:
 	var _badge_name: PackedStringArray = badge_files[badge_itr].rsplit(".import")
 	var img_txt := ResourceLoader.load(GlobalValues.asset_location + "season" + str(season_choice) + "/" + _badge_name[0])
-	badge.position = badge_pos[GlobalValues.BADGE_SCALE.x - 1]
-	badge.scale = GlobalValues.BADGE_SCALE
+	badge.position = badge_pos[GlobalValues.settings["badge_scale"] - 1]
+	badge.scale = Vector2(GlobalValues.settings["badge_scale"], GlobalValues.settings["badge_scale"])
 	badge.texture = img_txt
 	var bn: PackedStringArray = _badge_name[0].split(".")
 	badge_name.text = "[center][rainbow]" + bn[0]

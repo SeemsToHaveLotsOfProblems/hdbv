@@ -25,7 +25,7 @@ var colors: PackedStringArray = [
 
 func _ready() -> void:
 	GlobalValues.scene = GlobalValues.current_scene.MAIN_MENU
-	season_count = GlobalValues.season
+	season_count = GlobalValues.settings["season_itr"]
 	season_name.text = colors[season_count -1] + "SEASON " + str(season_count)
 
 
@@ -43,7 +43,7 @@ func _on_left_season_arrow_gui_input(event: InputEvent) -> void:
 
 func change_season() -> void:
 	season_name.text = colors[season_count -1] + "SEASON " + str(season_count)
-	GlobalValues.season = season_count
+	GlobalValues.change_setting("season_itr", season_count)
 
 
 func _on_view_badges_button_pressed() -> void:

@@ -12,4 +12,6 @@ func _ready() -> void:
 
 func _on_badge_scale_slider_value_changed(value: float) -> void:
 	badge_scale_text.text = "Badge Size: " + str(value)
+	# Safe to ignore as this can only be 1.0, 2.0, or 3.0
+	@warning_ignore("narrowing_conversion")
 	GlobalValues.change_setting("badge_scale", value)

@@ -23,7 +23,10 @@ func _ready() -> void:
 	DataHandler.settings_reader()
 
 
+## Use this function to modify the settings dictionary.
 func change_setting(key: String, val: int) -> void:
+	# This function is used instead of direct modifications so that
+	# proper settings file saving may be done.
 	if settings.has(key):
 		settings[key] = val
 		DataHandler.store_settings()

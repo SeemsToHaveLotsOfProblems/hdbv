@@ -1,6 +1,7 @@
 extends Node
 
 const user_data_location: String = "user://hdbv/"
+const user_season_dir: String = user_data_location + "usr_badges/"
 
 
 func store_settings() -> void:

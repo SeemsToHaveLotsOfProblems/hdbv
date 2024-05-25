@@ -90,6 +90,8 @@ func change_badge() -> void:
 
 ## Checks the user data folder for bages that the user may add.
 func check_user_added_badges() -> void:
+	if not DirAccess.dir_exists_absolute(DataHandler.user_season_dir):
+		return
 	var dir := DirAccess.open(DataHandler.user_season_dir)
 	for i in dir.get_directories():
 		# Checks the folder name to see if it matches the season number

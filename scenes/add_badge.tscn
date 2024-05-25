@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://xb5ln26ceqrn"]
+[gd_scene load_steps=4 format=3 uid="uid://xb5ln26ceqrn"]
 
 [ext_resource type="Texture2D" uid="uid://cc75i0uav33kv" path="res://assets/background.png" id="1_80bay"]
+[ext_resource type="Script" path="res://scenes/add_badge.gd" id="1_tj2ki"]
 [ext_resource type="Texture2D" uid="uid://fysgjq3ivlw8" path="res://assets/white_background.png" id="2_u84f6"]
 
 [node name="Control" type="Control"]
@@ -10,6 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_tj2ki")
 
 [node name="background" type="TextureRect" parent="."]
 layout_mode = 1
@@ -76,17 +78,24 @@ grow_vertical = 2
 size_flags_horizontal = 3
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
-text = "home/apps/hdbv/usr_data/season4/test.png"
+text = "File Path"
 fit_content = true
 scroll_active = false
 autowrap_mode = 0
 
-[node name="Button" type="Button" parent="CenterContainer/VBoxContainer/BadgeFileSelectorHBox"]
+[node name="FileSelectButton" type="Button" parent="CenterContainer/VBoxContainer/BadgeFileSelectorHBox"]
 layout_mode = 2
 text = "Select Badge Image"
 
 [node name="FileDialog" type="FileDialog" parent="CenterContainer/VBoxContainer/BadgeFileSelectorHBox"]
+title = "Select Badge Files"
 size = Vector2i(392, 159)
+ok_button_text = "Select"
+dialog_hide_on_ok = true
+file_mode = 1
+access = 2
+filters = PackedStringArray("*.png", "*.jpg", "*.jpeg", "*.webp")
+use_native_dialog = true
 
 [node name="Button" type="Button" parent="CenterContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 50)
@@ -105,3 +114,7 @@ offset_top = -0.320007
 offset_right = -0.248016
 offset_bottom = -0.248047
 text = "Back to settings"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/BadgeFileSelectorHBox/FileSelectButton" to="." method="_on_file_select_button_pressed"]
+[connection signal="file_selected" from="CenterContainer/VBoxContainer/BadgeFileSelectorHBox/FileDialog" to="." method="_on_file_dialog_file_selected"]
+[connection signal="files_selected" from="CenterContainer/VBoxContainer/BadgeFileSelectorHBox/FileDialog" to="." method="_on_file_dialog_files_selected"]

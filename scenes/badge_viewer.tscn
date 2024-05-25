@@ -54,6 +54,7 @@ metadata/_edit_lock_ = true
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+expand_mode = 1
 
 [node name="Button" type="Button" parent="."]
 anchors_preset = -1

@@ -70,12 +70,18 @@ func change_badge() -> void:
 	var _badge_name: PackedStringArray = badge_files[badge_itr].rsplit(".import")
 	var img_txt: Texture2D
 	if badge_files[badge_itr] in user_badge_files:
+		# Loading in the user added images for badges.
 		var _img := Image.load_from_file(DataHandler.user_season_dir + "s_" + str(season_choice) + "/" + _badge_name[0])
 		var _img_texture := ImageTexture.create_from_image(_img)
 		img_txt = _img_texture
 	else:
+		# Loading in default asset images
 		img_txt = ResourceLoader.load(GlobalValues.asset_location + "season" + str(season_choice) + "/" + _badge_name[0])
+	# Setting badge size to ensure proper sizing
+	badge.size = Vector2(180, 180)
+	# Setting badge position
 	badge.position = badge_pos[GlobalValues.settings["badge_scale"] - 1]
+	# Setting badge scale
 	badge.scale = Vector2(GlobalValues.settings["badge_scale"], GlobalValues.settings["badge_scale"])
 	badge.texture = img_txt
 	var bn: PackedStringArray = _badge_name[0].split(".")

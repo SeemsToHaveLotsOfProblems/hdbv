@@ -1,8 +1,21 @@
 # Godot 4+ specific ignores
 .godot/
-assets/badges/season1/images/
-assets/badges/season2/images/
-assets/badges/season3/images/
-assets/badges/season4/images/
+
+# Ignoring the badge files so as not to have copyright issues
+assets/badges/season1/*.webp
+assets/badges/season1/*.png
+assets/badges/season2/*.webp
+assets/badges/season2/*.png
+assets/badges/season3/*.webp
+assets/badges/season3/*.png
+assets/badges/season4/*.webp
+assets/badges/season4/*.png
+
+# Screenshots are not needed in the git repo
 screenshots/
+
+# Massive files for exporting to android. If you need them just tell Godot to install export templates.
 android/
+
+# GIMP files that I use to manipulate the badge images to make them work for the game.
+*.xcf

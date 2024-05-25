@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://dmxlt0quyqm0k"]
-
-[ext_resource type="Texture2D" uid="uid://d2okon7kgllll" path="res://assets/badges/season1/images/The Show & Tell Badge.webp" id="1_l7l6t"]
-[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_47mqu"]
-
-[node name="Badge1" type="TextureRect"]
-texture = ExtResource("1_l7l6t")
-script = ExtResource("2_47mqu")
-badge_name = "The Show & Tell Badge"

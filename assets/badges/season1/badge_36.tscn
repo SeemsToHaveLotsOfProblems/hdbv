@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://6wc6u6aw2x2q"]
-
-[ext_resource type="Texture2D" uid="uid://b6x2kbv5pvv0g" path="res://assets/badges/season1/images/The Sandcastle Badge.webp" id="1_qimyi"]
-[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_h74na"]
-
-[node name="Badge1" type="TextureRect"]
-texture = ExtResource("1_qimyi")
-script = ExtResource("2_h74na")
-badge_name = "The Sandcastle Badge"

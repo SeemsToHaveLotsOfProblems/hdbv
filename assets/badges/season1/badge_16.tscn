@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://36c22buppcnh"]
-
-[ext_resource type="Texture2D" uid="uid://cw4bvjrpo4i0f" path="res://assets/badges/season1/images/The Egg Badge.webp" id="1_kt6xl"]
-[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_80m5h"]
-
-[node name="Badge1" type="TextureRect"]
-texture = ExtResource("1_kt6xl")
-script = ExtResource("2_80m5h")
-badge_name = "The Egg Badge"

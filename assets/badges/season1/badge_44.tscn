@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://dw6nmlxwc65hl"]
-
-[ext_resource type="Texture2D" uid="uid://dprij2wqoaj2h" path="res://assets/badges/season1/images/The Submarine Badge.webp" id="1_jt0mh"]
-[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_beshq"]
-
-[node name="Badge1" type="TextureRect"]
-texture = ExtResource("1_jt0mh")
-script = ExtResource("2_beshq")
-badge_name = "The Submarine Badge"

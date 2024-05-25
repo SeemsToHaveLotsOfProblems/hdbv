@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://dabjiw8aq5xv"]
-
-[ext_resource type="Texture2D" uid="uid://y0bpfobf8wnr" path="res://assets/badges/season1/images/The Surprise Badge.webp" id="1_ycihj"]
-[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_he0ue"]
-
-[node name="Badge1" type="TextureRect"]
-texture = ExtResource("1_ycihj")
-script = ExtResource("2_he0ue")
-badge_name = "The Surprise Badge"

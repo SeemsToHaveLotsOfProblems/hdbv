@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="HeyDuggeeBadgeViewer"
-config/version="1.0"
+config/version="2.0"
 run/main_scene="res://scenes/main_menu.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 boot_splash/show_image=false
@@ -21,6 +21,7 @@ config/icon="res://icon.png"
 
 SignalBus="*res://signal_bus.gd"
 GlobalValues="*res://global_values.gd"
+DataHandler="*res://data_handler.gd"
 
 [display]
 

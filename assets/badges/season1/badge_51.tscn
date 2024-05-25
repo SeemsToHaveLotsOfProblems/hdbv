@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://dx3c0m5s0bbs5"]
-
-[ext_resource type="Texture2D" uid="uid://d28b42lkecvvk" path="res://assets/badges/season1/images/The Treasure Hunt Badge.webp" id="1_ymfxy"]
-[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_cvsls"]
-
-[node name="Badge1" type="TextureRect"]
-texture = ExtResource("1_ymfxy")
-script = ExtResource("2_cvsls")
-badge_name = "The Treasure Hunt Badge"

@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://hcvt3qdm5fk6"]
-
-[ext_resource type="Texture2D" uid="uid://xd2mdqo334ox" path="res://assets/badges/season1/images/The We Love Animals Badge.webp" id="1_ybcda"]
-[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_rwliw"]
-
-[node name="Badge1" type="TextureRect"]
-texture = ExtResource("1_ybcda")
-script = ExtResource("2_rwliw")
-badge_name = "The We Love Animals Badge"

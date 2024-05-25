@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://5nq0mvgfgovr"]
-
-[ext_resource type="Texture2D" uid="uid://b2a8gqry0uxdq" path="res://assets/badges/season1/images/The Scarecrow Badge.webp" id="1_qvjmw"]
-[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_gaqdc"]
-
-[node name="Badge1" type="TextureRect"]
-texture = ExtResource("1_qvjmw")
-script = ExtResource("2_gaqdc")
-badge_name = "The Scarecrow Badge"

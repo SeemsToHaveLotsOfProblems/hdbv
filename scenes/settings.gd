@@ -6,10 +6,12 @@ extends VBoxContainer
 
 
 func _ready() -> void:
-	badge_scale_slider.value = GlobalValues.BADGE_SCALE.x
-	badge_scale_text.text = "Badge Size: " + str(GlobalValues.BADGE_SCALE.x)
+	badge_scale_slider.value = GlobalValues.settings["badge_scale"]
+	badge_scale_text.text = "Badge Size: " + str(GlobalValues.settings["badge_scale"])
 
 
 func _on_badge_scale_slider_value_changed(value: float) -> void:
 	badge_scale_text.text = "Badge Size: " + str(value)
-	GlobalValues.BADGE_SCALE = Vector2(value, value)
+	# Safe to ignore as this can only be 1.0, 2.0, or 3.0
+	@warning_ignore("narrowing_conversion")
+	GlobalValues.change_setting("badge_scale", value)

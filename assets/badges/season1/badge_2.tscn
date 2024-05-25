@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://ciftxrx364vik"]
-
-[ext_resource type="Texture2D" uid="uid://37fqjjgtlgy4" path="res://assets/badges/season1/images/The Balloon Badge.webp" id="1_skfmb"]
-[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_q101k"]
-
-[node name="Badge1" type="TextureRect"]
-texture = ExtResource("1_skfmb")
-script = ExtResource("2_q101k")
-badge_name = "The Balloon Badge"

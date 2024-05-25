@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://cuhm2frkf7mof"]
-
-[ext_resource type="Texture2D" uid="uid://xd41prdoro16" path="res://assets/badges/season1/images/The Big Parade Badge.webp" id="1_s70rp"]
-[ext_resource type="Script" path="res://assets/badges/badge_script.gd" id="2_am2wa"]
-
-[node name="Badge1" type="TextureRect"]
-texture = ExtResource("1_s70rp")
-script = ExtResource("2_am2wa")
-badge_name = "The Big Parade Badge"

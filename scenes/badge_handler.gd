@@ -70,9 +70,9 @@ func change_badge() -> void:
 	var _badge_name: PackedStringArray = badge_files[badge_itr].rsplit(".import")
 	var img_txt: Texture2D
 	if badge_files[badge_itr] in user_badge_files:
-		# FIXME: This is an error with loading in the user made image!!!!!!!
-		print_debug(DataHandler.user_data_location + "s_" + str(season_choice) + "/" + _badge_name[0])
-		img_txt = ResourceLoader.load(DataHandler.user_data_location + "s_" + str(season_choice) + "/" + _badge_name[0])
+		var _img := Image.load_from_file(DataHandler.user_season_dir + "s_" + str(season_choice) + "/" + _badge_name[0])
+		var _img_texture := ImageTexture.create_from_image(_img)
+		img_txt = _img_texture
 	else:
 		img_txt = ResourceLoader.load(GlobalValues.asset_location + "season" + str(season_choice) + "/" + _badge_name[0])
 	badge.position = badge_pos[GlobalValues.settings["badge_scale"] - 1]

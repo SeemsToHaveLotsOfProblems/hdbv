@@ -1,6 +1,9 @@
 extends Control
 
 @onready var badge_list: ItemList = $CenterContainer/VBoxContainer/ItemList
+@onready var _notification: Popup = $Notification
+@onready var _notification_text: RichTextLabel = $Notification/CenterContainer/VBoxContainer/RichTextLabel
+@onready var confirmation: Popup = $Confirmation
 
 
 func _ready() -> void:
@@ -23,4 +26,10 @@ func populate_list() -> void:
 
 
 func _on_delete_button_pressed() -> void:
-	pass # Replace with function body.
+	if badge_list.get_selected_items().is_empty():
+		_notification_text.text = "No files selected!"
+		_notification.popup()
+
+
+func _on_notification_ok_button_pressed() -> void:
+	_notification.hide()

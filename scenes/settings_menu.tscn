@@ -60,6 +60,14 @@ icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
 
+[node name="DeleteBadges" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Delete Badges"
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
 offset_right = 8.0
@@ -70,4 +78,5 @@ script = ExtResource("3_p6i7h")
 
 [connection signal="value_changed" from="CenterContainer/VBoxContainer/BadgeScaleSlider" to="CenterContainer/VBoxContainer" method="_on_badge_scale_slider_value_changed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Button" to="CenterContainer/VBoxContainer" method="_on_button_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/DeleteBadges" to="CenterContainer/VBoxContainer" method="_on_delete_badges_pressed"]
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

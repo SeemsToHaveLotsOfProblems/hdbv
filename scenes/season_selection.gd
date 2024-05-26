@@ -25,8 +25,9 @@ var colors: PackedStringArray = [
 func _ready() -> void:
 	GlobalValues.scene = GlobalValues.current_scene.MAIN_MENU
 	season_itr = GlobalValues.settings["season_itr"]
-	season_name.text = colors[season_itr -1] + "SEASON " + str(season_itr)
-	check_user_added_seasons()
+	season_name.text = colors[randi() % colors.size()-1] + "SEASON " + str(season_itr)
+	SignalBus.connect("season_check_requested", check_user_added_seasons)
+	SignalBus.emit_signal("season_check_requested")
 
 
 func _on_right_season_arrow_gui_input(event: InputEvent) -> void:
@@ -42,7 +43,7 @@ func _on_left_season_arrow_gui_input(event: InputEvent) -> void:
 
 
 func change_season() -> void:
-	season_name.text = colors[season_itr -1] + "SEASON " + str(season_itr)
+	season_name.text = colors[randi() % colors.size()-1] + "SEASON " + str(season_itr)
 	GlobalValues.change_setting("season_itr", season_itr)
 
 
@@ -53,6 +54,7 @@ func _on_view_badges_button_pressed() -> void:
 ## Checks the user data folder for bages that the user may add.
 func check_user_added_seasons() -> void:
 	if not GlobalValues.checked_user_badges:
+		GlobalValues.season_count = 4
 		GlobalValues.checked_user_badges = true
 		# Opens the user data folder.
 		var account_for_season_4: bool = false

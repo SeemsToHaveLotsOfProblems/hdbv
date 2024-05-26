@@ -225,6 +225,7 @@ text = "Confirm"
 layout_mode = 2
 text = "Cancel"
 
+[connection signal="value_changed" from="CenterContainer/VBoxContainer/SpinBox" to="." method="_on_spin_box_value_changed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/BadgeFileSelectorHBox/FileSelectButton" to="." method="_on_file_select_button_pressed"]
 [connection signal="file_selected" from="CenterContainer/VBoxContainer/BadgeFileSelectorHBox/FileDialog" to="." method="_on_file_dialog_file_selected"]
 [connection signal="files_selected" from="CenterContainer/VBoxContainer/BadgeFileSelectorHBox/FileDialog" to="." method="_on_file_dialog_files_selected"]

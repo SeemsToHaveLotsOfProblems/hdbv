@@ -110,7 +110,13 @@ func _on_save_list_confirm_button_pressed() -> void:
 	notification_popup.popup()
 	badge_list.clear()
 	del_from_lst_btn.visible = false
+	GlobalValues.checked_user_badges = false
 
 
 func _on_save_list_cancel_button_pressed() -> void:
 	save_popup.hide()
+
+
+func _on_spin_box_value_changed(_value: float) -> void:
+	if spin_box.value > GlobalValues.season_count + 1:
+		spin_box.value = GlobalValues.season_count + 1

@@ -10,7 +10,8 @@ const asset_location: String = "res://assets/badges/"
 
 var scene: int = current_scene.MAIN_MENU
 var current_badge_being_viewed: int = 0
-var season_count: int = 4
+var checked_user_badges: bool = false
+var season_count: int = 4 # BUG: Something is changing this value when it shouldn't
 
 ## Do not write directly to dictonary, use the change_settings() function
 var settings: Dictionary = {

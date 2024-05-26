@@ -8,7 +8,7 @@ var season_itr: int = 1 :
 	set(value):
 		if value > GlobalValues.season_count:
 			season_itr = 1
-		elif value <= 0:
+		elif value < 1:
 			season_itr = GlobalValues.season_count
 		else:
 			season_itr = value
@@ -52,12 +52,19 @@ func _on_view_badges_button_pressed() -> void:
 
 ## Checks the user data folder for bages that the user may add.
 func check_user_added_seasons() -> void:
-	# Opens the user data folder.
-	var dir := DirAccess.open(DataHandler.user_season_dir)
-	if dir:
-		# Get a list of all the season directories in the folder.
-		var dir_list: PackedStringArray = dir.get_directories()
-		# This is the number of season folders that the user has.
-		# The minus 1 is to account for season 4 which is already part of the app.
-		var dir_size: int = dir_list.size()
-		GlobalValues.season_count += dir_size
+	if not GlobalValues.checked_user_badges:
+		GlobalValues.checked_user_badges = true
+		# Opens the user data folder.
+		var account_for_season_4: bool = false
+		var dir := DirAccess.open(DataHandler.user_season_dir)
+		if dir:
+			# Get a list of all the season directories in the folder.
+			var dir_list: PackedStringArray = dir.get_directories()
+			# This is the number of season folders that the user has.
+			if dir_list.has("s_4"):
+				account_for_season_4 = true
+			var dir_size: int = dir_list.size()
+			if account_for_season_4:
+				GlobalValues.season_count += dir_size - 1
+			else:
+				GlobalValues.season_count += dir_size

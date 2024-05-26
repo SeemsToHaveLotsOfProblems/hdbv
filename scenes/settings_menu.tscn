@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://07iis7g288rv"]
+[gd_scene load_steps=5 format=3 uid="uid://07iis7g288rv"]
 
 [ext_resource type="Texture2D" uid="uid://cc75i0uav33kv" path="res://assets/background.png" id="1_2i5r0"]
 [ext_resource type="Script" path="res://scenes/settings.gd" id="2_8a75h"]
+[ext_resource type="Texture2D" uid="uid://cobwiu4nmp2k0" path="res://assets/badges/blank_badge.webp" id="3_ndrdx"]
 [ext_resource type="Script" path="res://scenes/close_settings_button.gd" id="3_p6i7h"]
 
 [node name="Control" type="Control"]
@@ -50,6 +51,15 @@ min_value = 1.0
 max_value = 3.0
 value = 1.0
 
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Add Badges"
+icon = ExtResource("3_ndrdx")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
 offset_right = 8.0
@@ -59,4 +69,5 @@ text = "Close Settings"
 script = ExtResource("3_p6i7h")
 
 [connection signal="value_changed" from="CenterContainer/VBoxContainer/BadgeScaleSlider" to="CenterContainer/VBoxContainer" method="_on_badge_scale_slider_value_changed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Button" to="CenterContainer/VBoxContainer" method="_on_button_pressed"]
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

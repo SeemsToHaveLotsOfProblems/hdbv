@@ -8,7 +8,7 @@ var season_itr: int = 1 :
 	set(value):
 		if value > GlobalValues.season_count:
 			season_itr = 1
-		elif value < 1:
+		elif value <= 0:
 			season_itr = GlobalValues.season_count
 		else:
 			season_itr = value
@@ -59,5 +59,5 @@ func check_user_added_seasons() -> void:
 		var dir_list: PackedStringArray = dir.get_directories()
 		# This is the number of season folders that the user has.
 		# The minus 1 is to account for season 4 which is already part of the app.
-		var dir_size: int = dir_list.size() - 1
+		var dir_size: int = dir_list.size()
 		GlobalValues.season_count += dir_size

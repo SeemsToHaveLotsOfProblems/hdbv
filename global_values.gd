@@ -21,7 +21,9 @@ var settings: Dictionary = {
 
 
 func _ready() -> void:
-	# Uncomment the following line when it's finished being set up.
+	# Request permisions for android
+	OS.request_permissions()
+	# Run DataHandler init
 	DataHandler.settings_reader()
 
 

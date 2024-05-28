@@ -5,32 +5,31 @@
 
 
 # Basic Info
-
 This is a badge viewer for the program "Hey Duggee!".
-
 Your settings will save automatically as you change them.
 
 # Features
 
 ### View badges by season
-
 You may choose a season of the show and view all the badges of that season.
 
 
-
 ### Change badge sizes
-
 You may change the size of the badges to small, medium, or large
 
-
-### Future features
-**Note that these features are things that I would like to incude in future updates but are not a priority, and may not be added.**
-
-
-**Add badges(In Progress)**
-Allow users to add additional badges as easily as possible.
+### Add & Delete Badges
+You may add and delete badges in the settings menu.
+You may only add badges to Season 4 and above.
 
 
 
 ### Known Bugs
-There are no known bugs in the app.
+There is a known bug where the first badge in a season cannot be deleted even though it shows up in the list. This will be fixed in the next update. This glitch poses no risk to user data.
+
+
+## How to Add Badges
+    * In the Add Badge menu you may choose an image to add as a badge.
+    * You files name will be the name of the badge.
+    Example:
+        "The Add Badge Badge.png" will add a badge called "The Add Badge Badge" to the chosen season.
+        The file name is the badges name, so "the_add_badge_badge.png" Will show in lowercase with the underscores.

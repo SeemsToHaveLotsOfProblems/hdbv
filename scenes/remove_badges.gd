@@ -28,16 +28,22 @@ func populate_list() -> void:
 	var season_text: String = "Season "
 	if DirAccess.dir_exists_absolute(DataHandler.user_season_dir):
 		var season_dirs: PackedStringArray = DirAccess.get_directories_at(DataHandler.user_season_dir)
+		# Removing empty directories
 		for dir in season_dirs:
-			var tmp: PackedStringArray = dir.split("_")
-			var idx: int = badge_list.add_item(season_text + tmp[1] + ":")
-			badge_list.set_item_selectable(idx, false)
-			badge_list.set_item_custom_fg_color(idx, Color.HONEYDEW)
-			badge_list.set_item_custom_bg_color(idx, Color.BLUE_VIOLET)
-			for file in DirAccess.get_files_at(DataHandler.user_season_dir + dir):
-				tmp = file.split(".")
-				idx = badge_list.add_item(tmp[0])
-				badge_file_list.append(DataHandler.user_season_dir + dir + "/" + file)
+			print("Is dir(",dir , ") ", "empty?: ",DirAccess.get_files_at(DataHandler.user_season_dir + dir + "/").is_empty())
+			if DirAccess.get_files_at(DataHandler.user_season_dir + dir + "/").is_empty():
+				# Delete the directory becuase it's empty
+				DirAccess.remove_absolute(DataHandler.user_season_dir + dir + "/")
+			else:
+				var tmp: PackedStringArray = dir.split("_")
+				var idx: int = badge_list.add_item(season_text + tmp[1] + ":")
+				badge_list.set_item_selectable(idx, false)
+				badge_list.set_item_custom_fg_color(idx, Color.HONEYDEW)
+				badge_list.set_item_custom_bg_color(idx, Color.BLUE_VIOLET)
+				for file in DirAccess.get_files_at(DataHandler.user_season_dir + dir):
+					tmp = file.split(".")
+					idx = badge_list.add_item(tmp[0])
+					badge_file_list.append(DataHandler.user_season_dir + dir + "/" + file)
 
 
 func _on_delete_button_pressed() -> void:
@@ -45,6 +51,11 @@ func _on_delete_button_pressed() -> void:
 		_notification_text.text = "No files selected!"
 		_notification.popup()
 	else:
+		# BUG:
+		# There's an odd error that I caused where 1 badge in season 5 wouldn't be
+		# deleted and instead deleted from season 6.
+		# The bug seems to occur when multiple user added seasons are in play.
+		# /BUG
 		# Delete stuff
 		var selected_items: PackedInt32Array = badge_list.get_selected_items()
 		for file_itr in badge_list.get_selected_items().size():

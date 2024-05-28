@@ -97,7 +97,7 @@ dialog_hide_on_ok = true
 file_mode = 1
 access = 2
 root_subfolder = "/storage/emulated/0"
-filters = PackedStringArray("*.jpeg", "*.jpg", "*.png", "*.webp")
+filters = PackedStringArray("*.jpeg, *.jpg, *.webp, *.png", "*.jpg", "*.png", "*.webp", "*.jpeg")
 use_native_dialog = true
 
 [node name="SaveAndMakeBadgeButton" type="Button" parent="CenterContainer/VBoxContainer"]

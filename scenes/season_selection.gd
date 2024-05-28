@@ -2,7 +2,7 @@ extends HBoxContainer
 
 @onready var left_arrow: TextureRect = $Left_Season_Arrow
 @onready var right_arrow: TextureRect = $Right_Season_Arrow
-@onready var season_name: RichTextLabel = $SeasonName
+@onready var season_name: RichTextLabel = $CenterContainer/SeasonName
 
 var season_itr: int = 1 : 
 	set(value):

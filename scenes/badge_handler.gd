@@ -59,7 +59,7 @@ func find_badge_count() -> void:
 		var tmp: PackedStringArray = dir.get_files()
 		for i in tmp:
 			for x in accepted_extentions:
-				if i.ends_with(x):
+				if i.capitalize().ends_with(x):
 					badge_files.append(i)
 		total_badges_in_season = badge_files.size()
 	

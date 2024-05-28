@@ -112,6 +112,7 @@ func _on_save_list_confirm_button_pressed() -> void:
 	del_from_lst_btn.visible = false
 	GlobalValues.checked_user_badges = false
 	SignalBus.emit_signal("season_check_requested")
+	GlobalValues.season_count += 1
 
 
 func _on_save_list_cancel_button_pressed() -> void:

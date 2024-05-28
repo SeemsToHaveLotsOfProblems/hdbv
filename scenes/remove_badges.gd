@@ -6,7 +6,16 @@ extends Control
 @onready var confirmation: Popup = $Confirmation
 
 ## This array MUST be 1:1 with the item list!
-var badge_file_list: PackedStringArray
+var badge_file_list: PackedStringArray = []
+
+## This variable is just extra security on the deletion process to ensure that
+## only the badge files are deleted.
+var allowed_deletion: PackedStringArray = [
+	".jpeg",
+	".jpg",
+	".webp",
+	".png"
+]
 
 
 func _ready() -> void:
@@ -14,6 +23,8 @@ func _ready() -> void:
 
 
 func populate_list() -> void:
+	# Clear out the file list.
+	badge_file_list.clear()
 	var season_text: String = "Season "
 	if DirAccess.dir_exists_absolute(DataHandler.user_season_dir):
 		var season_dirs: PackedStringArray = DirAccess.get_directories_at(DataHandler.user_season_dir)
@@ -35,16 +46,21 @@ func _on_delete_button_pressed() -> void:
 		_notification.popup()
 	else:
 		# Delete stuff
+		var selected_items: PackedInt32Array = badge_list.get_selected_items()
 		for file_itr in badge_list.get_selected_items().size():
-			var itr: PackedInt32Array = badge_list.get_selected_items()
 			# Delete stuff
 			var badge_dir := DirAccess.open(DataHandler.user_season_dir)
-			# Remove the item from the list
-			badge_list.remove_item(itr[file_itr-1])
-			# Delete the item from the disk
-			# TRIPPLE CHECK THIS COMMAND!!!!!!!!!!!
-			#badge_dir.remove(badge_file_list[itr[file-1]])
-			print("False Delete: ", badge_file_list[itr[file_itr-1]])
+			# Ensure the file exists before attempting to delete.
+			print("File being checked: ", badge_file_list[selected_items[file_itr]-1])
+			print("Does file exists?: ", FileAccess.file_exists(badge_file_list[selected_items[file_itr]-1]))
+			if FileAccess.file_exists(badge_file_list[selected_items[file_itr]-1]):
+				for safty in allowed_deletion:
+					if badge_file_list[selected_items[file_itr]-1].ends_with(safty):
+						# Delete the item from the disk
+						# All testing had been done. This command will only delete the allowed files.
+						badge_dir.remove(badge_file_list[selected_items[file_itr]-1])
+		badge_list.clear()
+		populate_list()
 
 
 func _on_notification_ok_button_pressed() -> void:

@@ -67,6 +67,8 @@ func find_badge_count() -> void:
 
 
 func change_badge() -> void:
+	if badge_files.is_empty():
+		return
 	var _badge_name: PackedStringArray = badge_files[badge_itr].rsplit(".import")
 	var img_txt: Texture2D
 	if badge_files[badge_itr] in user_badge_files:

@@ -8,6 +8,8 @@
 This is a badge viewer for the program "Hey Duggee!".
 Your settings will save automatically as you change them.
 
+Version 2.2.0 is likely the final version of this app as the app is now fully completed. Unless a bug is discovered, than this is the last app update.
+
 # Features
 
 ### View badges by season
@@ -24,7 +26,7 @@ You may only add badges to Season 4 and above.
 
 
 ### Known Bugs
-There is a known bug where the first badge in a season cannot be deleted even though it shows up in the list. This will be fixed in the next update. This glitch poses no risk to user data.
+There are no known bugs.
 
 
 ## How to Add Badges
@@ -33,3 +35,4 @@ There is a known bug where the first badge in a season cannot be deleted even th
     Example:
         "The Add Badge Badge.png" will add a badge called "The Add Badge Badge" to the chosen season.
         The file name is the badges name, so "the_add_badge_badge.png" Will show in lowercase with the underscores.
+    * Click Save & Add Badges

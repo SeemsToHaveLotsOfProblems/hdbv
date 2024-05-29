@@ -32,8 +32,17 @@ func populate_list() -> void:
 		for dir in season_dirs:
 			print("Is dir(",dir , ") ", "empty?: ",DirAccess.get_files_at(DataHandler.user_season_dir + dir + "/").is_empty())
 			if DirAccess.get_files_at(DataHandler.user_season_dir + dir + "/").is_empty():
+				# Need to account for season skipping
+				var keep_dir: bool = false
+				var s_check: int = int(dir.split("_")[1])
+				for dir_check in season_dirs:
+					var d_check: int = int(dir_check.split("_")[1])
+					if s_check < d_check:
+						keep_dir = true
 				# Delete the directory becuase it's empty
-				DirAccess.remove_absolute(DataHandler.user_season_dir + dir + "/")
+				if not keep_dir:
+					DirAccess.remove_absolute(DataHandler.user_season_dir + dir + "/")
+					GlobalValues.season_count -= 1
 			else:
 				var tmp: PackedStringArray = dir.split("_")
 				var idx: int = badge_list.add_item(season_text + tmp[1] + ":")
@@ -53,26 +62,16 @@ func _on_delete_button_pressed() -> void:
 		_notification_text.text = "No files selected!"
 		_notification.popup()
 	else:
-		# BUG
-		# There is an odd bug where the first file in the list cannot be deleted...?
-		# /BUG
 		# Delete stuff
 		var selected_items: PackedInt32Array = badge_list.get_selected_items()
 		for file_itr in badge_list.get_selected_items().size():
 			# Delete stuff
 			var badge_dir := DirAccess.open(DataHandler.user_season_dir)
 			# Ensure the file exists before attempting to delete.
-			print("File being checked: ", badge_file_list[selected_items[file_itr]-1])
-			print("Does file exists?: ", FileAccess.file_exists(badge_file_list[selected_items[file_itr]-1]))
-			if FileAccess.file_exists(badge_file_list[selected_items[file_itr]-1]):
+			if FileAccess.file_exists(badge_file_list[selected_items[file_itr]]):
 				for safty in allowed_deletion:
-					if badge_file_list[selected_items[file_itr] - file_itr].ends_with(safty):
+					if badge_file_list[selected_items[file_itr]].ends_with(safty):
 						# Delete the item from the disk
-						print("Selected Item Idx: ", selected_items[file_itr])
-						print("File Itr: ", file_itr)
-						print("Badge List Item Selected: ", badge_list.get_item_text(selected_items[file_itr]))
-						print("Badge File List: ", badge_file_list)
-						print("File Deleted: ", badge_file_list[selected_items[file_itr]], "\n")
 						badge_dir.remove(badge_file_list[selected_items[file_itr]])
 		badge_list.clear()
 		populate_list()
